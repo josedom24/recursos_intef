@@ -12,17 +12,17 @@ Secundaria y Bachillerato
 
 ### Asignatura/s
 
-El presente recurso se puede desarrollar en cualquier asignatura de Secundaria o Bachillerato, donde se esté haciendo una introducción a la programación. Asignaturas, com Tecnología, TIC o incluso matemáticas. 
+El presente recurso se puede desarrollar en cualquier asignatura de Secundaria o Bachillerato, donde se esté haciendo una introducción a la programación. Asignaturas como Tecnología, TIC o incluso matemáticas. 
 
 ### ¿Se requieren conocimientos previos?¿cuáles son?
 
-El recurso tiene una dificultad sencilla, estaría pensado para desarrollar cuando ya se han estudiado algunos conceptos sobre programación y con el trabajo con el lenguaje Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
+El recurso tiene una dificultad sencilla, estaría pensado para desarrollar cuando ya se han estudiado algunos conceptos sobre programación y haber trabajado con el lenguaje Python algunos conceptos: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
 
 Puede ser un recurso muy acertado para repasar los conceptos básicos sobre la introducción a la programación con Python.
 
 ### ¿Qué objetivos se persigue con el recurso?
 
-El principal objetivo es aprender como solucionar por medio de un programa de ordenador un problema. En este caso es un problema matemático. 
+El principal objetivo es aprender como solucionar un problema, por medio de un programa de ordenador. En este caso es un problema matemático. 
 Vamos a realizar distintas aproximaciones a la solución del problema que nos permitan repasar distintos conceptos sobre la resolución de problemas con ordenadores:
 
 * Analizar el problema
@@ -41,7 +41,7 @@ Concretamente al desarrollar el programa en Python vamos a repasar distintos con
 
 El problema que queremos resolver es el siguiente:
 
-Uno de los objetivos fundamentales de los alumnos de primaria es aprender muy bien las tablas de multiplicar en su etapa de primaria. Vamos a crear un programa que ayude a los alumnos de primaria a repasar las tablas de multiplicar. Para ello, nuestro programa irá generando distintas multiplicaciones y nos irá pidiendo la solución. El programa nos pedirá, al principio, el número de multiplicaciones que se van a generar. Y al finalizar nos dará la puntuación que hemos obtenido, y sacamos más de un 9, el programa nos felicitará.
+Uno de los objetivos fundamentales de los alumnos de primaria es aprender muy bien las tablas de multiplicar. Vamos a crear un programa que ayude a los alumnos de primaria a repasar las tablas de multiplicar. Para ello, nuestro programa irá generando distintas multiplicaciones y nos irá pidiendo la solución. El programa nos pedirá, al principio, el número de multiplicaciones que se van a generar. Y al finalizar nos dará la puntuación que hemos obtenido, y sacamos más de un 9, el programa nos felicitará.
 
 ## Y ahora que sé para que sirve, ¿cómo lo pongo en práctica?
 
@@ -171,6 +171,30 @@ Número de multiplicaciones:3
 2 x 7 = 15
 ¡Respuesta incorrecta!
 ```
+
+Estudiemos algunos aspectos del programa:
+
+1. Vamos a pedir la cantidad de multiplicaciones que vamos a generar al usuario, usando una instrucción `input`. en este caso la instrucción `input` tiene como parámetro el mensaje que vamos a mostrar al usuario. Además la cadena de caracteres que vamos a leer la convertimos a entero, para posteriormente usarla en la función `range`.
+2. La instrucción `for` nos permite hacer un bucle que repite el bloque de instrucciones, tantas veces como hemos indicado en la variable `cuantas_multiplicaciones`.
+
+### Tercera aproximación: Generación de multiplicaciones y puntuación obtenida
+
+Finalmente vamos a introducir el uĺtimo elemento a nuestro problema: queremos llevar la cuenta de las respuestas correctas, para que al finalizar el programa nos de una nota (de 0 a 10) y que nos felicite si hemos sacado más de un 9. Para calcular la nota podemos usar la formula: `multiplicaciones_correctas/total_multiplicaciones * 10`.
+
+Em este caso necesitamos contar las respuestas correctas, para ello vamos a usar un **contador**. Un contador es una variable entera que nos permite contar un suceso, en este caso vamos a contar las multiplicaciones correctas. El contado se inicializa a un valor inicial, y se va incrementando cada vez que ocurre el suceso que queremos contar:
+
+La solución del problema quedaría de la siguiente forma:
+
+1. Pedir la cantidad de multiplicaciones que se van a generar.
+2. Crear un bucle que repita las instrucciones del programa anterior tantas veces como hayamos indicado:
+    * Inicializamos el contador
+    * Generar dos números aleatorios entre 2 y 10 que serán los factores de la multiplicación.
+    * Calcular la multiplicación de los números internamente.
+    * Imprimir la multiplicación y pedir al usuario la solución.
+    * Si la solución dada por el usuario coincide por la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error. 
+    * Si la solución dada por el usuario coincide por la solución calculada, incrementamos el contador.
+3. Calculamos la nota: 
+
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
