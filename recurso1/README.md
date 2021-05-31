@@ -33,7 +33,7 @@ Vamos a realizar distintas aproximaciones a la solución del problema que nos pe
 Concretamente al desarrollar el programa en Python vamos a repasar distintos conceptos:
 
 * Estructura de un programa python
-* Trabajar con datos, tipso de datos y variables
+* Trabajar con datos, tipos de datos y variables
 * Trabajar con funciones 
 * Utilizar los distintos estructuras de programación: secuencial, alternativa y repetitiva para desarrollar el algoritmo que resuelve el problema.
 
@@ -49,7 +49,7 @@ Una de la técnicas para analizar un programa y diseñar un programa que resuelv
 
 En este caso vamos a realizar tres aproximaciones para resolver el problema completo:
 
-### Generar una multiplicación
+### Primera aproximación: Generar una multiplicación
 
 En esta primera aproximación el problema sería muy sencillo: Vamos a generar una multiplicación con números aleatorios (entre 1 y 10), le pedimos al usuario la solución y el programa nos dice si la solución es correcta o incorrecta.
 
@@ -74,9 +74,9 @@ Ya que sabemos generar números enteros aleatorios, para resolver nuestro primer
 1. Generar dos números aleatorios entre 2 y 10 que serán los factores de la multiplicación.
 2. Calcular la multiplicación de los números internamente.
 3. Imprimir la multiplicación y pedir al usuario la solución.
-4. Si la solución dad por el usuario coincide por la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error.
+4. Si la solución dada por el usuario coincide por la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error.
 
-Veamos una posible solución al problema, haráimos un programa python que guardaríamos en el fichero `multiplicacion1.py`:
+Veamos una posible solución al problema, haríamos un programa python que guardaríamos en el fichero `multiplicacion1.py`:
 
 ```python
 from random import randint
@@ -88,7 +88,8 @@ solucion = factor1 * factor2
 # Imprimimos la multiplicación y pedimos al usuario la solución.
 print(factor1, "x", factor2, "= ", end="")
 solucion_de_usuario = int(input())
-# Si la solución dad por el usuario coincide por la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, 
+# Si la solución dad por el usuario coincide por la solución calculada,
+# el usuario habrá realizado de forma correcta la multiplicación, 
 # en caso contrario habrá cometido un error.
 if solucion_de_usuario == solucion:
     print("¡Respuesta correcta!")
@@ -96,8 +97,79 @@ else:
     print("¡Respuesta incorrecta!")
 ```
 
+Veamos cómo funciona:
 
+```bash
+$ python3 multiplicacion1.py 
+3 x 6 = 18
+¡Respuesta correcta!
 
+$ python3 multiplicacion1.py 
+6 x 6 = 37
+¡Respuesta incorrecta!
+```
+
+Veamos algunos aspectos del programa:
+
+1. `factor1` y `factor2` son dos variables enteradas generadas con la función `randint`
+2. La variable `solucion` también será de tipo entero, ay que al multiplicar dos valores enteros el resultado también es entero.
+3. La función `print` nos permite imprimir en pantalla: imprimimos el valor de la variable `factor1`, el carácter "x", el valor de la variable `factor2` y el carácter `=`. El parámetro `end=""` lo utilizamos para que no haga un salto de línea y la siguiente instrucción se ejecute en la misma línea.
+4. La función `input` lee una cadena de caracteres por teclado, en este caso usamos la función `int` para convertir esa cadena de caracteres en un número entero, que guardaremos en la variable `solucion_de_usuario`.
+5. La instrucción `if` nos permite ejecutar un bloque de código u otro según el resultado de una condición lógica. En este caso esa condición será la comprobación de si la solución calculada (variable `solucion`) es igual a la solución dada por el usuario (variable `solucion_de_usuario`). Para comprobar si dos valores son iguales usamos el operador `==`. Si los dos valores son iguales, se ejecutará la primera instrucción `print`, en caso contrario, se ejecutara la segunda. En python es muy importante el sangrado de código, es decir los bloques de instrucciones que se ejecutan en el `if` deben estar tabulados.
+
+### Segunda aproximación: Generar varias multiplicaciones
+
+A continuación vamos a complicar un poco el problema: ahora queremos que el programa nos pida la cantidad de multiplicaciones que va a generar y que va a pedir la solución al usuario. En este caso vamos a introducir un bucle (estructura repetitiva) que nos va a permitir repetir un número de veces un conjunto de instrucciones.
+
+¿Cómo podemos repetir un bloque de instrucciones en python? Para ello vamos a usar un bucle construido con la instrucción `for`, por ejemplo si queremos escribir 10 veces un mensaje podemos ejecutar el siguiente programa:
+
+```python
+for numero in range(0,10):
+    print("Hola")
+```
+
+En esta caso creamos un rango de valores (`range`) que nos permite repetir la instrucción `print` 10 veces. El rango de valores que hemos definido va desde el 0 al 9, y la variable `numero` va tomando cada uno de esos valores en cada iteración, aunque en este caso no hemos usado esa variable.
+
+Por lo tanto para resolver nuestro segundo problema deberemos:
+
+1. Pedir la cantidad de multiplicaciones que se van a generar.
+2. Crear un bucle que repita las instrucciones del programa anterior tantas veces como hayamos indicado.
+
+Para ello creamos el siguiente programa, que guardamos en ewl fichero `multiplicacion2.py`:
+
+```python
+from random import randint
+# Pedir la cantidad de multiplicaciones que se van a generar
+cuantas_multiplicaciones = int(input("Número de multiplicaciones:"))
+# Bucle que repite la generación de multiplicaciones 
+for numero in range(0,cuantas_multiplicaciones):
+    factor1 = randint(2, 10)
+    factor2 = randint(2, 10)
+    # Calculamos la multiplicación de los números generados.
+    solucion = factor1 * factor2
+    # Imprimimos la multiplicación y pedimos al usuario la solución.
+    print(factor1, "x", factor2, "= ", end="")
+    solucion_de_usuario = int(input())
+    # Si la solución dada por el usuario coincide por la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, 
+    # en caso contrario habrá cometido un error.
+    if solucion_de_usuario == solucion:
+        print("¡Respuesta correcta!")
+    else:
+        print("¡Respuesta incorrecta!")
+```
+
+Veamos el funcionamiento:
+
+```bash
+$ python3 multiplicacion2.py 
+Número de multiplicaciones:3
+2 x 4 = 8
+¡Respuesta correcta!
+8 x 8 = 64
+¡Respuesta correcta!
+2 x 7 = 15
+¡Respuesta incorrecta!
+```
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
