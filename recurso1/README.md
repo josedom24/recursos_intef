@@ -150,7 +150,8 @@ for numero in range(0,cuantas_multiplicaciones):
     # Imprimimos la multiplicación y pedimos al usuario la solución.
     print(factor1, "x", factor2, "= ", end="")
     solucion_de_usuario = int(input())
-    # Si la solución dada por el usuario coincide por la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, 
+    # Si la solución dada por el usuario coincide por la solución calculada, 
+    # el usuario habrá realizado de forma correcta la multiplicación, 
     # en caso contrario habrá cometido un error.
     if solucion_de_usuario == solucion:
         print("¡Respuesta correcta!")
