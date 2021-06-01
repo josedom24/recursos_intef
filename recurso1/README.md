@@ -74,7 +74,7 @@ Ya que sabemos generar números enteros aleatorios, para resolver nuestro primer
 1. Generar dos números aleatorios entre 2 y 10 que serán los factores de la multiplicación.
 2. Calcular la multiplicación de los números internamente.
 3. Imprimir la multiplicación y pedir al usuario la solución.
-4. Si la solución dada por el usuario coincide por la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error.
+4. Si la solución dada por el usuario coincideconr la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error.
 
 Veamos una posible solución al problema, haríamos un programa python que guardaríamos en el fichero `multiplicacion1.py`:
 
@@ -88,7 +88,7 @@ solucion = factor1 * factor2
 # Imprimimos la multiplicación y pedimos al usuario la solución.
 print(factor1, "x", factor2, "= ", end="")
 solucion_de_usuario = int(input())
-# Si la solución dad por el usuario coincide por la solución calculada,
+# Si la solución dada por el usuario coincide con la solución calculada,
 # el usuario habrá realizado de forma correcta la multiplicación, 
 # en caso contrario habrá cometido un error.
 if solucion_de_usuario == solucion:
@@ -150,7 +150,7 @@ for numero in range(0,cuantas_multiplicaciones):
     # Imprimimos la multiplicación y pedimos al usuario la solución.
     print(factor1, "x", factor2, "= ", end="")
     solucion_de_usuario = int(input())
-    # Si la solución dada por el usuario coincide por la solución calculada, 
+    # Si la solución dada por el usuario coincide con la solución calculada, 
     # el usuario habrá realizado de forma correcta la multiplicación, 
     # en caso contrario habrá cometido un error.
     if solucion_de_usuario == solucion:
@@ -186,17 +186,68 @@ Em este caso necesitamos contar las respuestas correctas, para ello vamos a usar
 La solución del problema quedaría de la siguiente forma:
 
 1. Pedir la cantidad de multiplicaciones que se van a generar.
-2. Crear un bucle que repita las instrucciones del programa anterior tantas veces como hayamos indicado:
-    * Inicializamos el contador
+2. Inicializamos el contador.
+3. Crear un bucle que repita las instrucciones del programa anterior tantas veces como hayamos indicado:
     * Generar dos números aleatorios entre 2 y 10 que serán los factores de la multiplicación.
     * Calcular la multiplicación de los números internamente.
     * Imprimir la multiplicación y pedir al usuario la solución.
-    * Si la solución dada por el usuario coincide por la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error. 
-    * Si la solución dada por el usuario coincide por la solución calculada, incrementamos el contador.
-3. Calculamos la nota: 
+    * Si la solución dada por el usuario coincide con la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error. 
+    * Si la solución dada por el usuario coincide con la solución calculada, incrementamos el contador.
+4. Calculamos la nota: `contador_preguntas_correctas / cantidad_multiplicaciones * 10`
+5. Imprimimos la nota
+6. Si la nota es mayor o igual que 9 mostramos un mensaje de felicitación.
 
+El programa quedaría de la siguiente manera (`multiplicacion3.py`):
+
+```python
+from random import randint
+# Pedir la cantidad de multiplicaciones que se van a generar
+cuantas_multiplicaciones = int(input("Número de multiplicaciones:"))
+# Incializamos el contador
+contador_multiplicaciones_correctas = 0
+# Bucle que repite la generación de multiplicaciones 
+for numero in range(0,cuantas_multiplicaciones):
+    factor1 = randint(2, 10)
+    factor2 = randint(2, 10)
+    # Calculamos la multiplicación de los números generados.
+    solucion = factor1 * factor2
+    # Imprimimos la multiplicación y pedimos al usuario la solución.
+    print(factor1, "x", factor2, "= ", end="")
+    solucion_de_usuario = int(input())
+    # Si la solución dada por el usuario coincide con la solución calculada, 
+    # el usuario habrá realizado de forma correcta la multiplicación, 
+    # en caso contrario habrá cometido un error.
+    if solucion_de_usuario == solucion:
+        print("¡Respuesta correcta!")
+        # Incrementamos el contador de multiplicaciones correctas
+        contador_multiplicaciones_correctas = contador_multiplicaciones_correctas + 1
+    else:
+        print("¡Respuesta incorrecta!")
+# Calculamos la nota
+nota = contador_multiplicaciones_correctas / cuantas_multiplicaciones * 10
+print("Tu nota ha sido", nota)
+# Si la nota es mayor o igal que 9, felicitamos al usuario
+if nota >=9:
+    print("Felicidades, has sacado más de un 9.")
+```
+
+Y Podemos hacer una prueba:
+
+```bash
+$ python3 multiplicacion3.py 
+Número de multiplicaciones:3
+5 x 2 = 10
+¡Respuesta correcta!
+5 x 4 = 20
+¡Respuesta correcta!
+9 x 2 = 17
+¡Respuesta incorrecta!
+Tu nota ha sido 6.666666666666666
+```
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
+
+
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
