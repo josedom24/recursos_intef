@@ -1,8 +1,8 @@
 # Aprendiendo las tablas de multiplicar con Python
 
-En la actualidad la educación debe preparar al alumnado para vivir en el mundo digital, en el que ya se están desarrollando. Esa formación no se límita a enseñar la utilización de determinadas herramientas informáticas (a ser consumidores digitales), sino que debe capacitar a la persona para conocer el lenguaje digital que le posibilite adquirir las destrezas necesarias para relacionarse con el mundo digital de forma completa (ser creadores digitales). Para conseguir esta segunda vertiente es necesario desarrollar en los jóvenes el pensamiento computacional, como metodología de trabajo y la programación, como herramienta para resolver problemas.
+En la actualidad la educación debe preparar al alumnado para vivir en el mundo digital, en el que ya se está desarrollando. Esa formación no se límita a enseñar la utilización de determinadas herramientas informáticas (a ser consumidores digitales), sino que debe capacitar a la persona para conocer el lenguaje digital que le posibilite adquirir las destrezas necesarias para relacionarse con el mundo digital de forma completa (ser creadores digitales). Para conseguir esta segunda vertiente es necesario desarrollar en los jóvenes el pensamiento computacional, como metodología de trabajo y la programación, como herramienta para resolver problemas.
 
-Existen muchos lenguajes de programación, que nos dan la posibilidad de resolver problemas por medio de programas de ordenador. El lenguaje Python puede ser un candidato muy adecuado para introducir a los jóvenes de las distintas etapas educativas en la programación, por distintos motivos: aunque es un lenguaje muy completo y potente, su sintaxis es sencilla y facilita el aprendizaje de la programación, además al ser un lenguaje interpretado, la ejecución de los programas es sencilla, sin necesidad de ningún proceso complicado. Python, es mutltiplataforma, por lo que es fácil de trabajar con los distintos sistemas operativos que tenemos a nuestra disposición.
+Existen muchos lenguajes de programación, que nos dan la posibilidad de resolver problemas por medio de programas de ordenador. El lenguaje Python puede ser un candidato muy adecuado para introducir a los jóvenes, de las distintas etapas educativas, en la programación, por distintos motivos: aunque es un lenguaje muy completo y potente, su sintaxis es sencilla y facilita el aprendizaje de la programación, además al ser un lenguaje interpretado, la ejecución de los programas es sencilla, sin necesidad de ningún proceso complicado. Python, es mutltiplataforma, por lo que es fácil de trabajar con los distintos sistemas operativos que tenemos a nuestra disposición.
 
 ## ¿Qué debo saber para empezar a trabajar con este recurso?
 
@@ -12,11 +12,11 @@ Secundaria y Bachillerato
 
 ### Asignatura/s
 
-El presente recurso se puede desarrollar en cualquier asignatura de Secundaria o Bachillerato, donde se esté haciendo una introducción a la programación. Asignaturas como Tecnología, TIC o incluso matemáticas. 
+El presente recurso se puede desarrollar en cualquier asignatura de Secundaria o Bachillerato, donde se esté haciendo una introducción a la programación. Asignaturas como Tecnología, TIC o incluso Matemáticas. 
 
 ### ¿Se requieren conocimientos previos?¿cuáles son?
 
-El recurso tiene una dificultad sencilla, estaría pensado para desarrollar cuando ya se han estudiado algunos conceptos sobre programación y haber trabajado con el lenguaje Python algunos conceptos: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
+El recurso tiene un nivel de dificultad bajo. Se tendría que desarrollar en clase, una vez que se tuviera alguna experiencia previa de algunos conceptos sobre programación y haber trabajado con el lenguaje Python. En concreto sería necesario que el alumno estuviera familiarizado con algunos conceptos: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
 
 Puede ser un recurso muy acertado para repasar los conceptos básicos sobre la introducción a la programación con Python.
 
@@ -41,11 +41,11 @@ Concretamente al desarrollar el programa en Python vamos a repasar distintos con
 
 El problema que queremos resolver es el siguiente:
 
-Uno de los objetivos fundamentales de los alumnos de primaria es aprender muy bien las tablas de multiplicar. Vamos a crear un programa que ayude a los alumnos de primaria a repasar las tablas de multiplicar. Para ello, nuestro programa irá generando distintas multiplicaciones y nos irá pidiendo la solución. El programa nos pedirá, al principio, el número de multiplicaciones que se van a generar. Y al finalizar nos dará la puntuación que hemos obtenido, y sacamos más de un 9, el programa nos felicitará.
+Uno de los objetivos fundamentales de los alumnos de primaria es aprender muy bien las tablas de multiplicar. Vamos a crear un programa que ayude a los alumnos de primaria a repasar las tablas de multiplicar. Para ello, nuestro programa irá generando distintas multiplicaciones y nos irá pidiendo la solución. El programa nos pedirá, al principio, el número de multiplicaciones que se van a generar. Y al finalizar nos dará la puntuación que hemos obtenido, y si sacamos más de un 9, el programa nos felicitará.
 
 ## Y ahora que sé para que sirve, ¿cómo lo pongo en práctica?
 
-Una de la técnicas para analizar un programa y diseñar un programa que resuelve el programa, es simplificar el problema, en problemas más sencillos que seamos capaces de solucionar de una manera sencilla y en sucesivas iteraciones ir introducción un nivel mayor de complejidad y solucionarlo a partir de lo que teníamos construido. 
+Una de la técnicas para analizar un programa y diseñar un programa que resuelve el problema, es simplificarlo en problemas más sencillos que seamos capaces de solucionar de una manera sencilla y en sucesivas iteraciones ir introducción un nivel mayor de complejidad y solucionarlo a partir de lo que teníamos construido. 
 
 En este caso vamos a realizar tres aproximaciones para resolver el problema completo:
 
@@ -53,7 +53,7 @@ En este caso vamos a realizar tres aproximaciones para resolver el problema comp
 
 En esta primera aproximación el problema sería muy sencillo: Vamos a generar una multiplicación con números aleatorios (entre 1 y 10), le pedimos al usuario la solución y el programa nos dice si la solución es correcta o incorrecta.
 
-¿Cómo generamos números aleatorios en Python?, en realidad en un ordenador generamos números [pseudoaleatorios](https://es.wikipedia.org/wiki/N%C3%BAmero_pseudoaleatorio), para generar números enteros pseudoaleatorio podemos usar la función `randint` del módulo `ramdom`. Veamos un ejemplo:
+¿Cómo generamos números aleatorios en Python?, en realidad en un ordenador generamos números [pseudoaleatorios](https://es.wikipedia.org/wiki/N%C3%BAmero_pseudoaleatorio), y para ello podemos usar la función `randint` del módulo `ramdom`. Veamos un ejemplo:
 
 Si queremos generar números pseudoaleatorio entre el 2 y el 10, podemos hacer el siguiente programa (que podemos guardar en un fichero `programa1.py`):
 
@@ -63,18 +63,21 @@ numero = randint(2, 10)
 print(numero)
 ```
 
-En la variable `numero` se guarda un número aleatorio entre 2 y 10 en cada una de las ejecuciones:
+En la variable `numero` se guarda un número entero aleatorio entre 2 y 10 en cada una de las ejecuciones:
 
 ```bash
 $ python3 programa1.py
 7
+
+$ python3 programa1.py
+5
 ```
 Ya que sabemos generar números enteros aleatorios, para resolver nuestro primer programa tendríamos que hacer los siguientes pasos:
 
 1. Generar dos números aleatorios entre 2 y 10 que serán los factores de la multiplicación.
 2. Calcular la multiplicación de los números internamente.
 3. Imprimir la multiplicación y pedir al usuario la solución.
-4. Si la solución dada por el usuario coincideconr la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error.
+4. Si la solución dada por el usuario coincide con la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error.
 
 Veamos una posible solución al problema, haríamos un programa python que guardaríamos en el fichero `multiplicacion1.py`:
 
@@ -111,15 +114,15 @@ $ python3 multiplicacion1.py
 
 Veamos algunos aspectos del programa:
 
-1. `factor1` y `factor2` son dos variables enteradas generadas con la función `randint`
-2. La variable `solucion` también será de tipo entero, ay que al multiplicar dos valores enteros el resultado también es entero.
+1. `factor1` y `factor2` son dos variables enteras generadas con la función `randint`.
+2. La variable `solucion` también será de tipo entero, ya que al multiplicar dos valores enteros el resultado también es entero.
 3. La función `print` nos permite imprimir en pantalla: imprimimos el valor de la variable `factor1`, el carácter "x", el valor de la variable `factor2` y el carácter `=`. El parámetro `end=""` lo utilizamos para que no haga un salto de línea y la siguiente instrucción se ejecute en la misma línea.
 4. La función `input` lee una cadena de caracteres por teclado, en este caso usamos la función `int` para convertir esa cadena de caracteres en un número entero, que guardaremos en la variable `solucion_de_usuario`.
-5. La instrucción `if` nos permite ejecutar un bloque de código u otro según el resultado de una condición lógica. En este caso esa condición será la comprobación de si la solución calculada (variable `solucion`) es igual a la solución dada por el usuario (variable `solucion_de_usuario`). Para comprobar si dos valores son iguales usamos el operador `==`. Si los dos valores son iguales, se ejecutará la primera instrucción `print`, en caso contrario, se ejecutara la segunda. En python es muy importante el sangrado de código, es decir los bloques de instrucciones que se ejecutan en el `if` deben estar tabulados.
+5. La instrucción `if` nos permite ejecutar un bloque de código u otro según el resultado de una condición lógica. En este caso esa condición será la comprobación de la solución calculada (variable `solucion`) y la solución dada por el usuario (variable `solucion_de_usuario`). Para comprobar si dos valores son iguales usamos el operador `==`. Si los dos valores son iguales, se ejecutará la primera instrucción `print`, en caso contrario, se ejecutará la segunda. En python es muy importante el sangrado de código, es decir los bloques de instrucciones que se ejecutan en el `if` deben estar tabulados.
 
 ### Segunda aproximación: Generar varias multiplicaciones
 
-A continuación vamos a complicar un poco el problema: ahora queremos que el programa nos pida la cantidad de multiplicaciones que va a generar y que va a pedir la solución al usuario. En este caso vamos a introducir un bucle (estructura repetitiva) que nos va a permitir repetir un número de veces un conjunto de instrucciones.
+A continuación vamos a complicar un poco el problema: ahora queremos que el programa nos pida la cantidad de multiplicaciones que va a generar y cuya solución va a pedir al usuario. En este caso vamos a introducir un bucle (estructura repetitiva) que nos va a permitir repetir un número de veces un conjunto de instrucciones.
 
 ¿Cómo podemos repetir un bloque de instrucciones en python? Para ello vamos a usar un bucle construido con la instrucción `for`, por ejemplo si queremos escribir 10 veces un mensaje podemos ejecutar el siguiente programa:
 
@@ -135,7 +138,7 @@ Por lo tanto para resolver nuestro segundo problema deberemos:
 1. Pedir la cantidad de multiplicaciones que se van a generar.
 2. Crear un bucle que repita las instrucciones del programa anterior tantas veces como hayamos indicado.
 
-Para ello creamos el siguiente programa, que guardamos en ewl fichero `multiplicacion2.py`:
+Para ello creamos el siguiente programa, que guardamos en el fichero `multiplicacion2.py`:
 
 ```python
 from random import randint
@@ -174,14 +177,14 @@ Número de multiplicaciones:3
 
 Estudiemos algunos aspectos del programa:
 
-1. Vamos a pedir la cantidad de multiplicaciones que vamos a generar al usuario, usando una instrucción `input`. en este caso la instrucción `input` tiene como parámetro el mensaje que vamos a mostrar al usuario. Además la cadena de caracteres que vamos a leer la convertimos a entero, para posteriormente usarla en la función `range`.
+1. Vamos a pedir la cantidad de multiplicaciones que vamos a generar al usuario, usando una instrucción `input`. En este caso la instrucción `input` tiene como parámetro el mensaje que vamos a mostrar al usuario. Además la cadena de caracteres que vamos a leer la convertimos a entero, para posteriormente usarla en la función `range`.
 2. La instrucción `for` nos permite hacer un bucle que repite el bloque de instrucciones, tantas veces como hemos indicado en la variable `cuantas_multiplicaciones`.
 
 ### Tercera aproximación: Generación de multiplicaciones y puntuación obtenida
 
 Finalmente vamos a introducir el uĺtimo elemento a nuestro problema: queremos llevar la cuenta de las respuestas correctas, para que al finalizar el programa nos de una nota (de 0 a 10) y que nos felicite si hemos sacado más de un 9. Para calcular la nota podemos usar la formula: `multiplicaciones_correctas/total_multiplicaciones * 10`.
 
-Em este caso necesitamos contar las respuestas correctas, para ello vamos a usar un **contador**. Un contador es una variable entera que nos permite contar un suceso, en este caso vamos a contar las multiplicaciones correctas. El contado se inicializa a un valor inicial, y se va incrementando cada vez que ocurre el suceso que queremos contar:
+Em este caso necesitamos contar las respuestas correctas, para ello vamos a usar un **contador**. Un contador es una variable entera que nos permite contar un suceso, en este caso vamos a contar las multiplicaciones correctas. El contador se inicializa a un valor inicial, y se va incrementando cada vez que ocurre el suceso que queremos contar:
 
 La solución del problema quedaría de la siguiente forma:
 
@@ -226,7 +229,7 @@ for numero in range(0,cuantas_multiplicaciones):
 # Calculamos la nota
 nota = contador_multiplicaciones_correctas / cuantas_multiplicaciones * 10
 print("Tu nota ha sido", nota)
-# Si la nota es mayor o igal que 9, felicitamos al usuario
+# Si la nota es mayor o igual que 9, felicitamos al usuario
 if nota >=9:
     print("Felicidades, has sacado más de un 9.")
 ```
@@ -247,8 +250,10 @@ Tu nota ha sido 6.666666666666666
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
-
+Esta actividad puede ayudar al alumno a afianzar conceptos ya estudiado sobre introducción a la programación. Profundizando en la metodología de análisis del problema y en la realización de programas en Python que resuelvan dicho problema. Además el hecho de trabajar con ordenadores es muy motivador para el alumnado, que puede ir probando si el programa realiza las operaciones que le hemos programado.
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
+
+
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
