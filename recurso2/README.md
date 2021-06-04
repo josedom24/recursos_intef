@@ -130,6 +130,21 @@ Para mover un objeto necesitaremos dos valores: uno para indicar el desplazamien
 
 ![movimiento](img/movimiento.png)
 
+Ya podemos explicar las nuevas instrucciones que hemos incluido para mover la pelota:
+
+1. A partir de una imagen png, creamos un objeto imagen (`ball = pygame.image.load("ball.png")`), pero como hemos comentado vamos a posicionar el rectángulo que ocupa la imagen, para obtener dicho rectángulo hemos ejecutado `ballrect = ball.get_rect()`.
+2. Inicializamos una lista con dos valores, que llamamos `speed`. El primer valor representa el desplazamiento horizontal, y el segundo el desplazamiento vertical. Lo utilizaremos para mover la pelota.
+3. Posicionamos la pelota en el origen de coordenadas: `ballrect.move_ip(0,0)`.
+4. Dentro del bucle del juego: Movemos la pelota con los datos guardados en la lista `speed`: `ballrect = ballrect.move(speed)`.
+5. Y comprobamos si ha llegado a algún borde: 
+    * Podemos obtener la posición del rectángulo que representa la pelota con `ballrect.left` (posición izquierda), `ballrect.rigth` (posición derecha), `ballrect.top` (posición superior) y `ballrect.bottom` (posición inferior).
+    * Si la posición izquierda es menor que 0 o la posición derecha es mayor que la anchura de la ventana (`ventana.get_width()`) habríamos tocado los bordes laterales. En esta situación cambiamos el signo del primer dato guardado en `speed`, es decir, si se movía a la derecha ahora se moverá a la izquierda, y al contrario.
+    * Si la posición superior es menor que 0 o la posición inferior es mayor que la altura de la ventana (`ventana.get_height()`) habríamos tocado los bordes superior o inferior. En esta situación cambiamos el signo del segundo dato guardado en `speed`, es decir, si se movía hacññia abajo ahora se moverá hacía arriba, y al contrario.
+
+Y ya podemos ejecutar el programa:
+
+
+
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
 
