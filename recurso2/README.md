@@ -126,8 +126,9 @@ Antes de explicar las nuevas instrucciones que hemos introducido en este ejemplo
 
 ![posicion](img/posicion.png)
 
+Para mover un objeto necesitaremos dos valores: uno para indicar el desplazamiento lateral (ordenada X), si es positivo desplazaremos el objeto a la derecha, si es negativo a la izquierda; y otro para indicar el desplazamiento vertical (ordenada Y), si es positivo se moverá hacia abajo, si es negativo hacía arriaba.
 
-
+![movimiento](img/movimiento.png)
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
