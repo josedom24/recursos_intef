@@ -9,6 +9,9 @@ pygame.display.set_caption("Ejemplo 4")
 ball = pygame.image.load("ball.png")
 ballrect = ball.get_rect()
 speed = [randint(3,6),randint(3,6)]
+# Pongo la pelota en el origen de coordenadas
+ballrect.move_ip(0,0)
+
 # Crea un objeto imagen bate, y obtengo su rectángulo
 bate = pygame.image.load("bate.png")
 baterect = bate.get_rect()

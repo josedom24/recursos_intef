@@ -59,7 +59,7 @@ while jugando:
     ventana.fill((255, 255, 255))
     # Todos los elementos del juego se vuelven a dibujar
     pygame.display.flip()
-    # Controlamos el número de cambios por segundos (FPS)
+    # Controlamos la frecuencia de refresco (FPS)
     pygame.time.Clock().tick(60)
 pygame.quit()
 ```
@@ -74,13 +74,59 @@ Veamos con detalle el programa:
     * El método `pygame.event.get()` nos devuelve una lista con los posibles eventos que han sucedido en el juego. Usamos una instrucción `for` para comprobar esta lista de eventos.
     * En este ejemplo, comprobamos el evento de pulsar el botón de cierre de la ventana. Esto ocurre cuando el tipo de evento (`event.type`) es igual al valor `pygame.QUIT`. Si esta condición ocurre se modificará la variable `jugando` que hará que el bucle principal del juego termine.
     * En el bucle principal se actúa sobre los elementos de la ventana. En nuestro caso no tenemos ninguno.
-    * Se borran los posibles elementos que tengamos, pintando la pantalla de un color: `ventana.fill((255, 255, 255))`. en este caso usando la notación [RGB](https://es.wikipedia.org/wiki/RGB) lo pintamos de blanco.
+    * Se borran los posibles elementos que tengamos, pintando la pantalla de un color: `ventana.fill((252, 243, 207))`. en este caso usando la notación [RGB](https://es.wikipedia.org/wiki/RGB) lo pintamos de amarillo claro.
     * Volvemos a pintar lo elementos en su nueva posición: `pygame.display.flip()`, controlando en todo momento ls frecuencia de refresco de la imagen ([fps](https://es.wikipedia.org/wiki/Fotogramas_por_segundo)) sea de 60.
 4. Si salimos del bucle principal se he terminado el programa: `pygame.quit()`.
 
 Si ejecutamos el programa: `python3 ejemplo1.py`, nos debe aparecer una ventana como esta:
 
 ![ejemplo1](img/ejemplo1.png)
+
+### Sesión 2: Añadimos la pelota a nuestro juego
+
+En esta sesión vamos a modificar el ejemplo anterior, para incluir el primer objeto a nuestro juego: una pelota que se moverá e ira rebotando por los bordes de la ventana.
+
+La pelota va a ser un imagen que tenemos en nuestro directorio: [`ball.png`](ball.png). El `ejmplo2.py` quedaría de la siguiente forma:
+
+```python
+import pygame
+pygame.init()
+ventana = pygame.display.set_mode((640,480))
+pygame.display.set_caption("Ejemplo 2")
+# Crea el objeto pelota.
+ball = pygame.image.load("ball.png")
+# Obtengo el rectángulo del objeto anterior
+ballrect = ball.get_rect()
+# Incializo los valores con los que se van a mover la pelota
+speed = [4,4]
+# Pongo la pelota en el origen de coordenadas
+ballrect.move_ip(0,0)
+jugando = True
+while jugando:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            jugando = False
+    # Muevo la pelota
+    ballrect = ballrect.move(speed)
+    # Compruebo si la pelota llega a los límites de la ventana
+    if ballrect.left < 0 or ballrect.right > ventana.get_width():
+        speed[0] = -speed[0]
+            
+    if ballrect.top < 0 or ballrect.bottom > ventana.get_height():
+        speed[1] = -speed[1]
+    
+    ventana.fill((252, 243, 207))
+    ventana.blit(ball, ballrect)
+    pygame.display.flip()
+    pygame.time.Clock().tick(60)
+pygame.quit()
+```
+
+Antes de explicar las nuevas instrucciones que hemos introducido en este ejemplo, tenemos que aprender como posicionamos y movemos los objetos dentro de la ventana. Cada objeto se representa por el rectángulo que ocupa, y se posiciona en la ventana indicando la ordenada X (posición horizontal) y la ordenada Y (posición vertical). Tenemos que saber que el origen de coordenadas (0,0) se encuentra en la esquina superior izquierda. 
+
+![posicion](img/posicion.png)
+
+
 
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?

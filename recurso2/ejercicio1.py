@@ -17,7 +17,7 @@ while jugando:
     ventana.fill(( 252, 243, 207 ))
     # Todos los elementos del juego se vuelven a dibujar
     pygame.display.flip()
-    # Controlamos el número de cambios por segundos (FPS)
+    # Controlamos la frecuencia de refresco (FPS)
     pygame.time.Clock().tick(60)
 pygame.quit()
 
