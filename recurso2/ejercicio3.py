@@ -1,7 +1,7 @@
 import pygame
 # Inicialización de Pygame
 pygame.init()
-# Inicialización de la superficie de dibujo (display surface)
+# Inicialización de la superficie de dibujo 
 ventana = pygame.display.set_mode((640,480))
 pygame.display.set_caption("Ejemplo 3")
 # Crea un objeto imagen, y obtengo su rectángulo
@@ -35,7 +35,7 @@ while jugando:
         speed[0] = -speed[0]
     if ballrect.top < 0 or ballrect.bottom > ventana.get_height():
         speed[1] = -speed[1]
-    ventana.fill((255,255,255))
+    ventana.fill((252, 243, 207))
     ventana.blit(ball, ballrect)
     # Dibujo el bate
     ventana.blit(bate, baterect)

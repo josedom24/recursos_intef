@@ -2,7 +2,7 @@ import pygame
 from random import randint
 # Inicialización de Pygame
 pygame.init()
-# Inicialización de la superficie de dibujo (display surface)
+# Inicialización de la superficie de dibujo 
 ventana = pygame.display.set_mode((640,480))
 pygame.display.set_caption("Ejemplo 4")
 # Crea un objeto imagen, y obtengo su rectángulo
@@ -47,7 +47,7 @@ while jugando:
         texto_y = ventana.get_height() / 2 - texto_rect.height / 2
         ventana.blit(texto, [texto_x, texto_y])
     else:
-        ventana.fill((255,255,255))
+        ventana.fill((252, 243, 207))
         ventana.blit(ball, ballrect)
         # Dibujo el bate
         ventana.blit(bate, baterect)
