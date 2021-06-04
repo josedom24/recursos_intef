@@ -143,7 +143,7 @@ Ya podemos explicar las nuevas instrucciones que hemos incluido para mover la pe
 
 Y ya podemos ejecutar el programa:
 
-![mp4](img/ejemplo2.mp4)
+![ejemplo2](img/ejemplo2.gif)
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
