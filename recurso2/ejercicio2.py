@@ -25,6 +25,7 @@ while jugando:
         speed[1] = -speed[1]
     
     ventana.fill((252, 243, 207))
+    # Dibujo la pelota
     ventana.blit(ball, ballrect)
     pygame.display.flip()
     pygame.time.Clock().tick(60)

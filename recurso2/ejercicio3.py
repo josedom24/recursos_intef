@@ -1,22 +1,16 @@
 import pygame
-# Inicialización de Pygame
 pygame.init()
-# Inicialización de la superficie de dibujo 
 ventana = pygame.display.set_mode((640,480))
 pygame.display.set_caption("Ejemplo 3")
-# Crea un objeto imagen, y obtengo su rectángulo
 ball = pygame.image.load("ball.png")
 ballrect = ball.get_rect()
 speed = [4,4]
-# Pongo la pelota en el origen de coordenadas
 ballrect.move_ip(0,0)
-
-# Crea un objeto imagen bate, y obtengo su rectángulo
+# Crea un objeto bate, y obtengo su rectángulo
 bate = pygame.image.load("bate.png")
 baterect = bate.get_rect()
-# Pongo el bate en el medio de la pantalla
+# Pongo el bate en en la parte inferior de la pantalla
 baterect.move_ip(240,450)
-# Bucle principal
 jugando = True
 while jugando:
     for event in pygame.event.get():
@@ -28,12 +22,11 @@ while jugando:
         baterect = baterect.move(-3,0)
     if keys[pygame.K_RIGHT]:
         baterect = baterect.move(3,0)
-    # Compruebo si ha colisión
+    # Compruebo si hay colisión
     if baterect.colliderect(ballrect):
         speed[1] = -speed[1]
-    # Muevo la pelota
+ 
     ballrect = ballrect.move(speed)
-    # Compruebo si la pelota llega a los límites de la ventana
     if ballrect.left < 0 or ballrect.right > ventana.get_width():
         speed[0] = -speed[0]
     if ballrect.top < 0 or ballrect.bottom > ventana.get_height():

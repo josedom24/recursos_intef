@@ -86,7 +86,7 @@ Si ejecutamos el programa: `python3 ejemplo1.py`, nos debe aparecer una ventana 
 
 En esta sesión vamos a modificar el ejemplo anterior, para incluir el primer objeto a nuestro juego: una pelota que se moverá e ira rebotando por los bordes de la ventana.
 
-La pelota va a ser un imagen que tenemos en nuestro directorio: [`ball.png`](ball.png). El `ejmplo2.py` quedaría de la siguiente forma:
+La pelota va a ser un imagen que tenemos en nuestro directorio: [`ball.png`](ball.png). El [`ejmplo2.py`](ejemplo2.py) quedaría de la siguiente forma:
 
 ```python
 import pygame
@@ -116,6 +116,7 @@ while jugando:
         speed[1] = -speed[1]
     
     ventana.fill((252, 243, 207))
+    # Dibujo la pelota
     ventana.blit(ball, ballrect)
     pygame.display.flip()
     pygame.time.Clock().tick(60)
@@ -139,17 +140,96 @@ Ya podemos explicar las nuevas instrucciones que hemos incluido para mover la pe
 5. Y comprobamos si ha llegado a algún borde: 
     * Podemos obtener la posición del rectángulo que representa la pelota con `ballrect.left` (posición izquierda), `ballrect.rigth` (posición derecha), `ballrect.top` (posición superior) y `ballrect.bottom` (posición inferior).
     * Si la posición izquierda es menor que 0 o la posición derecha es mayor que la anchura de la ventana (`ventana.get_width()`) habríamos tocado los bordes laterales. En esta situación cambiamos el signo del primer dato guardado en `speed`, es decir, si se movía a la derecha ahora se moverá a la izquierda, y al contrario.
-    * Si la posición superior es menor que 0 o la posición inferior es mayor que la altura de la ventana (`ventana.get_height()`) habríamos tocado los bordes superior o inferior. En esta situación cambiamos el signo del segundo dato guardado en `speed`, es decir, si se movía hacññia abajo ahora se moverá hacía arriba, y al contrario.
+    * Si la posición superior es menor que 0 o la posición inferior es mayor que la altura de la ventana (`ventana.get_height()`) habríamos tocado los bordes superior o inferior. En esta situación cambiamos el signo del segundo dato guardado en `speed`, es decir, si se movía hacía abajo ahora se moverá hacía arriba, y al contrario.
+6. Finalmente volvemos a pintar la pelota en la ventana (`ventana.blit(ball, ballrect)`).
 
-Y ya podemos ejecutar el programa:
+Y ya podemos ejecutar el programa (`python3 ejercicio2.py`):
 
 ![ejemplo2](img/ejemplo2.gif)
 
+### Sesión 3: añadimos el bate a nuestro juego
+
+En esta sesión, partiendo de lo que habíamos realizado en la anterior, vamos a añadir otro objeto a nuestro juego: un bate, que controlaremos con el cursor derecho e izquierdo. La pelota al tocar el bate rebotará. El fichero [`ejemplo3.py`](ejemplo3.py) quedaría de la siguiente manera:
+
+```python
+import pygame
+pygame.init()
+ventana = pygame.display.set_mode((640,480))
+pygame.display.set_caption("Ejemplo 3")
+ball = pygame.image.load("ball.png")
+ballrect = ball.get_rect()
+speed = [4,4]
+ballrect.move_ip(0,0)
+# Crea un objeto bate, y obtengo su rectángulo
+bate = pygame.image.load("bate.png")
+baterect = bate.get_rect()
+# Pongo el bate en en la parte inferior de la pantalla
+baterect.move_ip(240,450)
+jugando = True
+while jugando:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            jugando = False
+    # Compruebo si se ha pulsado alguna tecla
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        baterect = baterect.move(-3,0)
+    if keys[pygame.K_RIGHT]:
+        baterect = baterect.move(3,0)
+    # Compruebo si hay colisión
+    if baterect.colliderect(ballrect):
+        speed[1] = -speed[1]
+ 
+    ballrect = ballrect.move(speed)
+    if ballrect.left < 0 or ballrect.right > ventana.get_width():
+        speed[0] = -speed[0]
+    if ballrect.top < 0 or ballrect.bottom > ventana.get_height():
+        speed[1] = -speed[1]
+    ventana.fill((252, 243, 207))
+    ventana.blit(ball, ballrect)
+    # Dibujo el bate
+    ventana.blit(bate, baterect)
+    pygame.display.flip()
+    pygame.time.Clock().tick(60)
+pygame.quit()
+
+```
+Veamos las nuevas instrucciones que hemos añadido:
+
+1. Ahora el objeto bate se crea a partir de otra imagen (`bate = pygame.image.load("bate.png")`), obtenemos el rectángulo que ocupa (`baterect = bate.get_rect()`) y lo colocamos en su posición inicial (`baterect.move_ip(240,450)`).
+2. Dentro del bucvle, comprobamos si hemos pulsado alguna tecla. Con `keys = pygame.key.get_pressed()` obtenemos una lista con las teclas que se han pulsado. 
+3. Si hemos pulsado el cursor izquierdo (`if keys[pygame.K_LEFT]:`) movemos el bate tres posiciones a la izquierda (`baterect = baterect.move(-3,0)`).
+4. Si hemos pulsado el cursor derecho (`if keys[pygame.K_RIGHT]:`) movemos el bate tres posiciones a la derecha (`baterect = baterect.move(3,0)`).
+5. Finalmente, volvemos a pintar el bate en la ventana (`ventana.blit(bate, baterect)`).
+
+Y ya podemos ejecutar el programa (`python3 ejercicio2.py`):
+
+![ejemplo4](img/ejemplo4.gif)
+
+### Sesión 4: Terminamos nuestro juego
+
+En esta sesión no vamos a explicar el código del último ejemplo. El alumno, estudiando el código del programa [`ejercicio4.py`](ejercicio4.py) tendrá que buscar las instrucciones que hemos añadido y que nos permiten realizar las siguientes cosas:
+
+1. En cada ejecución la pelota tiene una velocidad distinta.
+2. Ahora la pelota, no se mueve en diagonales.
+3. Al tocar el borde inferior has perdido el juego.
+4. Al perder el juego se pone el texto "Game Over".
+
+A continuación le podemos proponer al alumno algunas mejoras en el juego.
+
+1. Qué el movimiento del bate se vaya acelerando al dejar pulsado los cursores.
+2. Que el rebote de la pelota no sea siempre usando el mismo ángulo, sino que cada rebote se haga usando un ángulo distinto.
+3. Qué la pelota cada cierto tiempo se vaya acelerando.
+4. Podríamos incluir algunos objetos "ladrillos" y crear un juego parecido al "Arkanoid".
+
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
+En el aprendizaje tradicional de la programación se utilizan muchos ejemplos que no siempre son atractivos o conocidos por los alumnos. El hecho de que tenga que porgramar un juego puede ser mucho más motivador para el alumno, además de que normalmente, va a conocer las dinámicas y funcionalidades de los juegos con lo que es sencillo que el alumno se implique en esta tarea.
+
+Además la programación de juegos puede ser una actividad transversal entre las asignaturas donde se este impartiendo la introducción a la programación y la asignatura de matemáticas. Ya que se pueden realizar muchos juegos donde los conceptos matemáticos necesarios sean muy importantes.
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
-
+La creación de juegos con Python puede desarrollar en el alumno una motivación adicional a la hora de aprender conceptos sobre programación. Además vamos a desarrollar la creatividad del alumno en el proceso del desarrollo de un juego, y también podemos realizar esta actividad en grupo, con lo que estaremos desarrollando el trabajo colaborativo.
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
