@@ -147,7 +147,7 @@ Y ya podemos ejecutar el programa (`python3 ejercicio2.py`):
 
 ![ejemplo2](img/ejemplo2.gif)
 
-### Sesión 3: añadimos el bate a nuestro juego
+### Sesión 3: Añadimos el bate a nuestro juego
 
 En esta sesión, partiendo de lo que habíamos realizado en la anterior, vamos a añadir otro objeto a nuestro juego: un bate, que controlaremos con el cursor derecho e izquierdo. La pelota al tocar el bate rebotará. El fichero [`ejemplo3.py`](ejemplo3.py) quedaría de la siguiente manera:
 
@@ -197,7 +197,7 @@ pygame.quit()
 Veamos las nuevas instrucciones que hemos añadido:
 
 1. Ahora el objeto bate se crea a partir de otra imagen (`bate = pygame.image.load("bate.png")`), obtenemos el rectángulo que ocupa (`baterect = bate.get_rect()`) y lo colocamos en su posición inicial (`baterect.move_ip(240,450)`).
-2. Dentro del bucvle, comprobamos si hemos pulsado alguna tecla. Con `keys = pygame.key.get_pressed()` obtenemos una lista con las teclas que se han pulsado. 
+2. Dentro del bucle, comprobamos si hemos pulsado alguna tecla. Con `keys = pygame.key.get_pressed()` obtenemos una lista con las teclas que se han pulsado. 
 3. Si hemos pulsado el cursor izquierdo (`if keys[pygame.K_LEFT]:`) movemos el bate tres posiciones a la izquierda (`baterect = baterect.move(-3,0)`).
 4. Si hemos pulsado el cursor derecho (`if keys[pygame.K_RIGHT]:`) movemos el bate tres posiciones a la derecha (`baterect = baterect.move(3,0)`).
 5. Finalmente, volvemos a pintar el bate en la ventana (`ventana.blit(bate, baterect)`).
@@ -224,7 +224,7 @@ A continuación le podemos proponer al alumno algunas mejoras en el juego.
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
-En el aprendizaje tradicional de la programación se utilizan muchos ejemplos que no siempre son atractivos o conocidos por los alumnos. El hecho de que tenga que porgramar un juego puede ser mucho más motivador para el alumno, además de que normalmente, va a conocer las dinámicas y funcionalidades de los juegos con lo que es sencillo que el alumno se implique en esta tarea.
+En el aprendizaje tradicional de la programación se utilizan muchos ejemplos que no siempre son atractivos o conocidos por los alumnos. El hecho de que tenga que programar un juego puede ser mucho más motivador para el alumno, además de que normalmente, va a conocer las dinámicas y funcionalidades de los juegos con lo que es sencillo que el alumno se implique en esta tarea.
 
 Además la programación de juegos puede ser una actividad transversal entre las asignaturas donde se este impartiendo la introducción a la programación y la asignatura de matemáticas. Ya que se pueden realizar muchos juegos donde los conceptos matemáticos necesarios sean muy importantes.
 
