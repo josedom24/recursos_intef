@@ -86,13 +86,13 @@ Si ejecutamos el programa: `python3 ejemplo1.py`, nos debe aparecer una ventana 
 
 En esta sesión vamos a modificar el ejemplo anterior, para incluir el primer objeto a nuestro juego: una pelota que se moverá e ira rebotando por los bordes de la ventana.
 
-La pelota va a ser un imagen que tenemos en nuestro directorio: [`ball.png`](ball.png). El [`ejmplo2.py`](ejemplo2.py) quedaría de la siguiente forma:
+La pelota va a ser un imagen que tenemos en nuestro directorio: [`ball.png`](ball.png). El [`ejercicio2.py`](ejercicio2.py) quedaría de la siguiente forma:
 
 ```python
 import pygame
 pygame.init()
 ventana = pygame.display.set_mode((640,480))
-pygame.display.set_caption("Ejemplo 2")
+pygame.display.set_caption("ejercicio 2")
 # Crea el objeto pelota.
 ball = pygame.image.load("ball.png")
 # Obtengo el rectángulo del objeto anterior
@@ -149,7 +149,7 @@ Y ya podemos ejecutar el programa (`python3 ejercicio2.py`):
 
 ### Sesión 3: Añadimos el bate a nuestro juego
 
-En esta sesión, partiendo de lo que habíamos realizado en la anterior, vamos a añadir otro objeto a nuestro juego: un bate, que controlaremos con el cursor derecho e izquierdo. La pelota al tocar el bate rebotará. El fichero [`ejemplo3.py`](ejemplo3.py) quedaría de la siguiente manera:
+En esta sesión, partiendo de lo que habíamos realizado en la anterior, vamos a añadir otro objeto a nuestro juego: un bate, que controlaremos con el cursor derecho e izquierdo. La pelota al tocar el bate rebotará. El fichero [`ejercicio3.py`](ejercicio3.py) quedaría de la siguiente manera:
 
 ```python
 import pygame
