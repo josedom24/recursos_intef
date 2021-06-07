@@ -254,7 +254,7 @@ Esta actividad puede ayudar al alumno a afianzar conceptos ya estudiado sobre in
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
-Aunque tradicional la enseñanza de la programación es muy práctica y se hacen muchos ejercicios, en muchas ocasiones, sobre todo cuando el alumno se está iniciando en el desarrollo de programas, no se pone mucha atención en las distintas metodologías que nos facilitan el análisis del programa y el diseño de una posible solución.
+Aunque tradicionalmente la enseñanza de la programación es muy práctica y se hacen muchos ejercicios, en muchas ocasiones, sobre todo cuando el alumno se está iniciando en el desarrollo de programas, no se pone mucha atención en las distintas metodologías que nos facilitan el análisis del programa y el diseño de una posible solución.
 
 Con este recurso se introduce una metodología que puede ayudar al alumno a enfrentarse con problemas un poco más complejos: se analiza el problema completo, pero se van dando soluciones a partes del problema más simples, y se va añadiendo elementos del problema en sucesivas aproximaciones, hasta realizar un programa que resuelve el problema completo.
 
