@@ -12,7 +12,7 @@ Sin embargo, ¿podríamos crear programas que tomaran como datos de entrada la i
 
 ### Niveles a los que va dirigido
 
-Bachillerato y formación Profesional
+Bachillerato y Formación Profesional
 
 ### Asignatura/s
 
