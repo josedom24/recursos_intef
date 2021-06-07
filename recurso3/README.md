@@ -54,7 +54,7 @@ Ya podemos ver la clave que hemos generado. Tenemos que tener en cuenta que esta
 
 Una vez que tenemos nuestra API key, vamos a usar por primera vez una API RESTful de OpenWheather. 
 
-En realidad el uso es muy parecido a acceder a una página web, es decir, vamos a hacer una petición HTTP a una URL que nos devolverá una información determinada. Normalmente las URL de las API RESTful tienen una serie de parámetros que nos permiten configurar la consulta, y nos devolverá una información con una cierta estructura. La pregunta sería: ¿Cómo sabemos las URL, los parámetros y la estructura de la información recibida de una API RESTful? La respuesta a esta pregunta es: estudiando la documentación de la API RESTful que queremos usar.
+En realidad el uso es muy parecido a acceder a una página web, es decir, vamos a hacer una petición HTTP a una URL que nos devolverá una información determinada. Normalmente las URL de las API RESTful tienen una serie de parámetros que nos permiten configurar la consulta. Y una vez que hagamos la petición obtendremos una respuesta HTTP que nos devolverá una información con una cierta estructura. La pregunta sería: ¿Cómo sabemos las URL, los parámetros y la estructura de la información recibida de una API RESTful? La respuesta a esta pregunta es: estudiando la documentación de la API RESTful que queremos usar.
 
 Accedemos a la opción *API* y nos aparecen los distintos servicios web que podemos usar. Nosotros para este recurso vamos a usar **Current Weather Data**:
 
