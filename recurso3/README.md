@@ -161,7 +161,7 @@ parametros={"q":ciudad,
 respuesta=requests.get("http://api.openweathermap.org/data/2.5/weather",params=parametros)
 # Si la respuesta devuelve eñ código 200, todo ha ido bien
 if respuesta.status_code == 200:
-    # La respuesta json se covierte en un diccionario
+    # La respuesta json se convierte en un diccionario
     datos = respuesta.json()
     # Se obtienen los valores del diccionario
     print("La temperatura actual es:",datos["main"]["temp"],"ºC")
