@@ -147,7 +147,7 @@ Cuando trabajamos con JSON desde un programa Python, los arrays JSON se conviert
 
 ### Paso 4: ¿Cómo hacemos un programa Python que haga una consulta al servicio web de OpenWheather?
 
-Vamos a usar el módulo [`requests`](https://docs.python-requests.org/en/master/) para poder hacer peticiones HTTP a la URL del servicio web que vamos a utilizar. El coigo fuente del programa lo podemos encontrar en el fichero [`programa.py`](programa.py) y quedaría de la siguiente forma:
+Vamos a usar el módulo [`requests`](https://docs.python-requests.org/en/master/) para poder hacer peticiones HTTP a la URL del servicio web que vamos a utilizar. El código fuente del programa lo podemos encontrar en el fichero [`programa.py`](programa.py) y quedaría de la siguiente forma:
 
 ```python
 import requests
