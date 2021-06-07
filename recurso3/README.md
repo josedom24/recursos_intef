@@ -60,7 +60,7 @@ Accedemos a la opción *API* y nos aparecen los distintos servicios web que pode
 
 ![openwhetaher](img/openwheather4.png)
 
-Pulsamos sobre la opción *API doc* y accedmos a la documentación de esta API:
+Pulsamos sobre la opción *API doc* y accedemos a la documentación de esta API:
 
 ![openwhetaher](img/openwheather5.png)
 
