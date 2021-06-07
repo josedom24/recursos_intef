@@ -51,6 +51,43 @@ Ya podemos ver la clave que se nos asignado. Tenemos que tener en cuenta que est
 
 ![openwhetaher](img/openwheather3.png)
 
+Una vez que tenemos nuestra API key, vamos a usar por primera vez una API RESTful de OpenWheather. 
+
+En realidad el uso es muy parecido a acceder a una página web, es decir, vamos a hacer una petición HTTP a una URL que nos devolverá una información determinada. Normalmente las URL de las API RESTful tienen una serie de parámetros que nos permiten configurar la consulta, y nos devolverá una información con una cierta estructura. La pregunta sería: ¿Cómo sabemos las URL, los parámetros y la estructura de la información recibida de una API RESTful? La respuesta a esta pregunta es: estudiando la documentación de la API RESTful que queremos usar.
+
+Accedemos a la opción *API* y nos aparecen los distintos servicios web que podemos usar. Nosotros para este recurso vamos a usar **Current Weather Data**:
+
+![openwhetaher](img/openwheather4.png)
+
+Pulsamos sobre la opción *API doc* y accedmos a la documentación de esta API:
+
+![openwhetaher](img/openwheather5.png)
+
+En la documentación podemos aprender muchas cosas:
+
+* Las URL que que tengo que usar para realizar búsqueda de ciudades: por nombre, por identificador, por coordenadas geográficas, por códigos postales,...
+* Los parámetros que puedo indicar en la URL para configurar la consulta.
+* La estructura de la información recibida
+
+En nuestro caso vamos a hacer una consulta de una ciudad por nombre, por lo que la URL que voy a usar es:
+
+`api.openweathermap.org/data/2.5/weather`
+
+Los parámetros que voy a indicar serán:
+
+* `q`: Para indicar el nombre de la ciudad.
+* `appid`: Para indicar la API key.
+* `units`: Para indicar las unidades de medidas. Vamos a usar `metric`.
+
+Por lo tanto, si queremos consultar la ciudad "Sevilla", tenemos que hacer una petición a la URL:
+
+`https://api.openweathermap.org/data/2.5/weather?q=Sevilla&appid=50ff42ffd87463e3fc038c0166616d7a&units=metric`
+
+Vamos a usar un navegador web para obtener la salida de una forma más visual, si elegimos la opción de *Datos sin procesar* podremos ver la información devuelta en su formato JSON original:
+
+![openwhetaher](img/openwheather6.png)
+
+
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
