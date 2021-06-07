@@ -47,7 +47,7 @@ Aunque algunos servicios web RESTful se pueden usar sin ninguna restricción, ot
 
     ![openwhetaher](img/openwheather2.png)
 
-Ya podemos ver la clave que se nos asignado. Tenemos que tener en cuenta que esta clave es como nuestra contraseña, nos identifica en el servicio web, por lo que es importante que la protejamos de forma adecuada.
+Ya podemos ver la clave que hemos generado. Tenemos que tener en cuenta que esta clave es como nuestra contraseña, nos identifica en el servicio web, por lo que es importante que la protejamos de forma adecuada.
 
 ![openwhetaher](img/openwheather3.png)
 
@@ -173,6 +173,16 @@ else:
     print("De esa ciudad no tengo datos.")
 ```
 Veamos con detalle el programa:
+
+1. Importamos el modulo `requests` (`import requests`).
+2. A continuación pedimos el nombre de la ciudad por teclado.
+3. Creamos un diccionario donde vamos a guardar los nombres de los parámetros de la url y sus valores. Al parámetro `q` asignamos el valor de la variable `ciudad`, donde hemos guardado el nombre de la ciudad. Usa un diccionario para guardar los parámetros de la URL facilita el trabajo con ellos.
+4. Al hacer la petición con el módulo `requests` indicamos la url y el parámetro `params` lo igualamos al diccionario que hemos creado anteriormente. La petición nos va a devolver la infromación de la respuesta HTTP que guardaremos en el objeto `respuesta`.
+5. Comprobamos si la respuesta HTTP ha sido correcta, para ello comprobamos que el [código de estado](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP) sea 200 (`if respuesta.status_code == 200:`), si devuelve otro valor, ha ahbido un  problema, y mostramos el mensaje "De esa ciudad no tengo datos.".
+6. Si la petición ha sido correcta, convertimos la información devuelta, con formato JSON, a un diccionario llamado `datos`. Esto lo hacemos con el método `json()`: `datos = respuesta.json()`.
+7. Finalmente imprimimos los datos de salida que están guardados en el diccionario `datos`.
+
+Veamos la ejecución del programa:
 
 ```bash
 $ python3 programa.py 
