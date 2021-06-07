@@ -1,6 +1,6 @@
 # Consulta el tiempo atmosférico con Python
 
-Un programa de ordenador recibe datos de entrada, procesa de forma automáticamente estos datos y genera unos datos de salida, nos devuelve una información.
+Un programa de ordenador recibe datos de entrada, procesa, de forma automáticamente, esos datos y genera unos datos de salida, nos devuelve una información.
 
 Los datos de entrada, normalmente son introducidos por el usuario. En otras ocasiones los datos con los que trabaja el programa están guardados en ficheros o en bases de datos. Pero, ¿y si pudiéramos utilizar los datos que tenemos disponible en internet para realizar nuestros programas?
 
@@ -23,7 +23,8 @@ Bachillerato y Formación Profesional
 
 ### ¿En qué consiste el recurso?
 
-Vamos a desarrollar un programa en Python que nos posibilite consultar el tiempo atmosférico que tenemos en nuestra ciudad. Para ello el programa, se comunicara con el servicio web RESTful API de `openwheather`.
+Vamos a desarrollar un programa en Python que nos posibilite consultar el tiempo atmosférico que tenemos en nuestra ciudad. Para ello el programa, se comunicara con el servicio web RESTful API de 
+*openwheather*.
 
 ## Y ahora que sé para que sirve, ¿cómo lo pongo en práctica?
 
@@ -83,13 +84,13 @@ Por lo tanto, si queremos consultar la ciudad "Sevilla", tenemos que hacer una p
 
 `https://api.openweathermap.org/data/2.5/weather?q=Sevilla&appid=50ff42ffd87463e3fc038c0166616d7a&units=metric`
 
-Vamos a usar un navegador web para obtener la salida de una forma más visual, si elegimos la opción de *Datos sin procesar* podremos ver la información devuelta en su formato JSON original:
+Vamos a usar un navegador web para obtener la salida de una forma más visual, si elegimos la opción de *Datos sin procesar*, podremos ver la información devuelta en su formato JSON original:
 
 ![openwhetaher](img/openwheather6.png)
 
 ### Paso 3: Introducción a JSON
 
-El lenguaje de marcas JSOn nos sirve para estructurar información de distinto tipo: números, cadenas de caracteres, booleanos, arrays y objetos. Los arrays representa una lista de datos gaurdada entree corchetes (`[` y `]`) y los objetos son colecciones no ordenadas de pares de la forma **<clave>:<valor>**, separados por comas y guardas entre llaves (`{` y `}`).
+El lenguaje de marcas JSON nos sirve para estructurar información de distinto tipo: números, cadenas de caracteres, booleanos, arrays y objetos. Los arrays representa una lista de datos gaurdada entre corchetes (`[` y `]`) y los objetos son colecciones no ordenadas de pares de la forma **<clave>:<valor>**, separados por comas y guardadas entre llaves (`{` y `}`).
 
 La consulta anterior que hemos recibido nos ha devuelto la siguiente información:
 
@@ -140,7 +141,7 @@ La consulta anterior que hemos recibido nos ha devuelto la siguiente informació
 }
 ```
 
-Aquí podemos encontrar toda la información meteorológica de la ciudad de Sevilla. Nostros posteriormente nos quedaremos con el objeto cuya calve es `main` donde encontramos la temperatura actual (`temp`), la sensación térmica (`feels_like`), la temperatura mínima (`temp_min`), la máxima (`temp_max`), la presión (`pressure`) y la humedad (`humidity`).
+Aquí podemos encontrar toda la información meteorológica de la ciudad de Sevilla. Nostros posteriormente nos quedaremos con el objeto cuya clave es `main` donde encontramos la temperatura actual (`temp`), la sensación térmica (`feels_like`), la temperatura mínima (`temp_min`), la máxima (`temp_max`), la presión (`pressure`) y la humedad (`humidity`).
 
 Cuando trabajamos con JSON desde un programa Python, los arrays JSON se convierten en listas Python, y los objetos JSON se convierten en diccionarios Python. Lo veremos en el siguiente punto:
 
