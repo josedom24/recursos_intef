@@ -242,7 +242,7 @@ Además la programación de juegos puede ser una actividad transversal entre las
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
-La creación de juegos con Python puede desarrollar en el alumno una motivación adicional a la hora de aprender conceptos sobre programación. Además vamos a desarrollar la creatividad del alumno en el proceso del desarrollo de un juego, y también podemos realizar esta actividad en grupo, con lo que estaremos desarrollando el trabajo colaborativo.
+La creación de juegos con Python puede desarrollar en el alumno una motivación adicional a la hora de aprender conceptos sobre programación. Además vamos a desarrollar la creatividad del alumno en el proceso del desarrollo de un juego, y también podemos realizar esta actividad en grupos, con lo que estaremos desarrollando el trabajo colaborativo.
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
 
