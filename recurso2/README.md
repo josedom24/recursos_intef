@@ -14,10 +14,22 @@ Bachillerato y Formación Profesional
 
 ### Asignatura/s
 
+En Bachillerato cualquier asignatura donde se este impartiendo conceptos de introducción a programación con Python. En Formación Profesional, este recurso puede ser apropiado, para los ciclos de la Familia Profesional de Informática donde se imparta la introducción a la Programación.
+
+Además este recurso puede servir para que se trabaje en algún proyecto transversal entre varias asignaturas. Normalmente el desarrollo de videojuegos, como hemos indicado anteriormente, necesita de varias disciplinas para llevarlo a cabo: matemáticas, física, dibujo, lengua, ...
+
 ### ¿Se requieren conocimientos previos?¿cuáles son?
+
+El recurso tiene un nivel de dificultad medio. Es necesario que el alumnado tenga conocimientos previos de programación con Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
 
 ### ¿Qué objetivos se persigue con el recurso?
 
+Los objetivos que se van a conseguir con la realización de este recurso son:
+
+* Conocer la funcionalidades básicas de la librería pyGame, para perimir que los alumnos puedan desarrollar juegos utilizando los conocimientos de programación que poseen.
+* Repasar los conceptos fundamentales de programación, de una manera más atractiva para los alumnos.
+* Desarrollar la creatividad del alumno. Una vez que aprendan, con la realización de este recurso, los fundamentos para desarrollar juegos con pyGame, el alumno estará capacitado para seguir explorando las posibilidades que ofrece el desarrollo de videojuegos.
+* Fomentar el trabajo en grupo. Como hemos apuntando anteriormente, el desarrollo de videojuegos es una actividad multidisplinar, por lo que sería muy sencillo que un grupo de alumnos, utilizando el trabajo colaborativo, puedan desarrollar algún proyecto relacionado con el desarrollo de videojuegos.
 
 ### ¿En qué consiste el recurso?
 
@@ -226,10 +238,12 @@ A continuación le podemos proponer al alumno algunas mejoras en el juego.
 
 En el aprendizaje tradicional de la programación se utilizan muchos ejemplos que no siempre son atractivos o conocidos por los alumnos. El hecho de que tenga que programar un juego puede ser mucho más motivador para el alumno, además de que normalmente, va a conocer las dinámicas y funcionalidades de los juegos con lo que es sencillo que el alumno se implique en esta tarea.
 
-Además la programación de juegos puede ser una actividad transversal entre las asignaturas donde se este impartiendo la introducción a la programación y la asignatura de matemáticas. Ya que se pueden realizar muchos juegos donde los conceptos matemáticos necesarios sean muy importantes.
+Además la programación de juegos puede ser una actividad transversal entre las asignaturas donde se este impartiendo la introducción a la programación y otras asignaturas: conceptos matemáticos son, en muchas ocasiones, necesarios para realizar la lógica del juego, el diseño de los gráficos de nuestro juego se pueden realizar en la asignatura de dibujo, o incluso, el guión que tendrá el juego se puede desarrollar en la asignatura de lengua,...
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
 La creación de juegos con Python puede desarrollar en el alumno una motivación adicional a la hora de aprender conceptos sobre programación. Además vamos a desarrollar la creatividad del alumno en el proceso del desarrollo de un juego, y también podemos realizar esta actividad en grupo, con lo que estaremos desarrollando el trabajo colaborativo.
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
+
+Necesitamos un ordenador con Python 3 y con la librería pyGame instalada. Para codificar el programa podemos usar cualquier editor de texto.
