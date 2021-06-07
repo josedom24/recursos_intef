@@ -24,7 +24,7 @@ Bachillerato y Formación Profesional
 ### ¿En qué consiste el recurso?
 
 Vamos a desarrollar un programa en Python que nos posibilite consultar el tiempo atmosférico que tenemos en nuestra ciudad. Para ello el programa, se comunicara con el servicio web RESTful API de 
-*openwheather*.
+*openweather*.
 
 ## Y ahora que sé para que sirve, ¿cómo lo pongo en práctica?
 
@@ -32,37 +32,37 @@ Vamos a desarrollar un programa en Python que nos posibilite consultar el tiempo
 
 Como ya hemos presentado en la introducción del recurso, las páginas web o aplicaciones web están pensada para que las personas consulten información. De esta manera si quiero saber los datos atmosféricos de mi ciudad puedo a acceder a la página [openweathermap.org](https://openweathermap.org) y hacer una búsqueda de mi ciudad:
 
-![openwhetaher](img/openwheather1.png)
+![openweather](img/openwheather1.png)
 
 Los datos son recibidos utilizando el lenguaje HTML y utilizando Hojas de Estílo (CSS) para darle formato. De esta manera la persona recibe está información de manera muy clara.
 
-Pero, ¿y si queremos desarrollar un programa que haga la misma consulta y que pueda procesar esa información de forma automática? En este caso necesitaríamos consultar el servicio web RESTful de openwhether: [https://openweathermap.org/api](https://openweathermap.org/api) y la información recibida vendría estructurada con otro lenguaje de marcado, en nuestro caso utilizaremos JSON, para que sea fácil procesarlo desde nuestro programa. Lo vemos en el siguiente punto.
+Pero, ¿y si queremos desarrollar un programa que haga la misma consulta y que pueda procesar esa información de forma automática? En este caso necesitaríamos consultar el servicio web RESTful de openweather: [https://openweathermap.org/api](https://openweathermap.org/api) y la información recibida vendría estructurada con otro lenguaje de marcado, en nuestro caso utilizaremos JSON, para que sea fácil procesarlo desde nuestro programa. Lo vemos en el siguiente punto.
 
-### Paso 2: Usando el servicio web RESTful de OpenWheather
+### Paso 2: Usando el servicio web RESTful de OpenWeather
 
-Aunque algunos servicios web RESTful se pueden usar sin ninguna restricción, otros, como el de OpenWheather, es necesario que nos identifiquemos para su utilización. En este caso el proceso de autentficación se hace mediante una clave personal (**API key**). Lo primero que vamos a hacer es obtener nuestra clave personal, para ello:
+Aunque algunos servicios web RESTful se pueden usar sin ninguna restricción, otros, como el de OpenWeather, es necesario que nos identifiquemos para su utilización. En este caso el proceso de autentficación se hace mediante una clave personal (**API key**). Lo primero que vamos a hacer es obtener nuestra clave personal, para ello:
 
-1. Nos registramos en la página de OpenWheather
+1. Nos registramos en la página de OpenWeather
 2. Accedemos con el usuario y contraseña que hemos indicado.
 3. Accedemos al apartado *API Keys* y generamos una nueva key.
 
-    ![openwhetaher](img/openwheather2.png)
+    ![openwetaher](img/openwheather2.png)
 
 Ya podemos ver la clave que hemos generado. Tenemos que tener en cuenta que esta clave es como nuestra contraseña, nos identifica en el servicio web, por lo que es importante que la protejamos de forma adecuada.
 
-![openwhetaher](img/openwheather3.png)
+![openweather](img/openwheather3.png)
 
-Una vez que tenemos nuestra API key, vamos a usar por primera vez una API RESTful de OpenWheather. 
+Una vez que tenemos nuestra API key, vamos a usar por primera vez una API RESTful de OpenWeather. 
 
 En realidad el uso es muy parecido a acceder a una página web, es decir, vamos a hacer una petición HTTP a una URL que nos devolverá una información determinada. Normalmente las URL de las API RESTful tienen una serie de parámetros que nos permiten configurar la consulta. Y una vez que hagamos la petición obtendremos una respuesta HTTP que nos devolverá una información con una cierta estructura. La pregunta sería: ¿Cómo sabemos las URL, los parámetros y la estructura de la información recibida de una API RESTful? La respuesta a esta pregunta es: estudiando la documentación de la API RESTful que queremos usar.
 
 Accedemos a la opción *API* y nos aparecen los distintos servicios web que podemos usar. Nosotros, para la realización de este recurso, vamos a usar **Current Weather Data**:
 
-![openwhetaher](img/openwheather4.png)
+![openweather](img/openwheather4.png)
 
 Pulsamos sobre la opción *API doc* y accedemos a la documentación de esta API:
 
-![openwhetaher](img/openwheather5.png)
+![openweather](img/openwheather5.png)
 
 En la documentación podemos aprender muchas cosas:
 
@@ -86,7 +86,7 @@ Por lo tanto, si queremos consultar la ciudad "Sevilla", tenemos que hacer una p
 
 Vamos a usar un navegador web para obtener la salida de una forma más visual, si elegimos la opción de *Datos sin procesar*, podremos ver la información devuelta en su formato JSON original:
 
-![openwhetaher](img/openwheather6.png)
+![openweather](img/openwheather6.png)
 
 ### Paso 3: Introducción a JSON
 
@@ -145,7 +145,7 @@ Aquí podemos encontrar toda la información meteorológica de la ciudad de Sevi
 
 Cuando trabajamos con JSON desde un programa Python, los arrays JSON se convierten en listas Python, y los objetos JSON se convierten en diccionarios Python. Lo veremos en el siguiente punto:
 
-### Paso 4: ¿Cómo hacemos un programa Python que haga una consulta al servicio web de OpenWheather?
+### Paso 4: ¿Cómo hacemos un programa Python que haga una consulta al servicio web de OpenWeather?
 
 Vamos a usar el módulo [`requests`](https://docs.python-requests.org/en/master/) para poder hacer peticiones HTTP a la URL del servicio web que vamos a utilizar. El código fuente del programa lo podemos encontrar en el fichero [`programa.py`](programa.py) y quedaría de la siguiente forma:
 
