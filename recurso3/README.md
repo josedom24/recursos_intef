@@ -32,7 +32,7 @@ Vamos a desarrollar un programa en Python que nos posibilite consultar el tiempo
 
 Como ya hemos presentado en la introducción del recurso, las páginas web o aplicaciones web están pensada para que las personas consulten información. De esta manera si quiero saber los datos atmosféricos de mi ciudad puedo a acceder a la página [openweathermap.org](https://openweathermap.org) y hacer una búsqueda de mi ciudad:
 
-![openweather](img/openwheather1.png)
+![openweather](img/openweather1.png)
 
 Los datos son recibidos utilizando el lenguaje HTML y utilizando Hojas de Estílo (CSS) para darle formato. De esta manera la persona recibe está información de manera muy clara.
 
@@ -46,11 +46,11 @@ Aunque algunos servicios web RESTful se pueden usar sin ninguna restricción, ot
 2. Accedemos con el usuario y contraseña que hemos indicado.
 3. Accedemos al apartado *API Keys* y generamos una nueva key.
 
-    ![openwetaher](img/openwheather2.png)
+    ![openwetaher](img/openweather2.png)
 
 Ya podemos ver la clave que hemos generado. Tenemos que tener en cuenta que esta clave es como nuestra contraseña, nos identifica en el servicio web, por lo que es importante que la protejamos de forma adecuada.
 
-![openweather](img/openwheather3.png)
+![openweather](img/openweather3.png)
 
 Una vez que tenemos nuestra API key, vamos a usar por primera vez una API RESTful de OpenWeather. 
 
@@ -58,11 +58,11 @@ En realidad el uso es muy parecido a acceder a una página web, es decir, vamos 
 
 Accedemos a la opción *API* y nos aparecen los distintos servicios web que podemos usar. Nosotros, para la realización de este recurso, vamos a usar **Current Weather Data**:
 
-![openweather](img/openwheather4.png)
+![openweather](img/openweather4.png)
 
 Pulsamos sobre la opción *API doc* y accedemos a la documentación de esta API:
 
-![openweather](img/openwheather5.png)
+![openweather](img/openweather5.png)
 
 En la documentación podemos aprender muchas cosas:
 
@@ -86,7 +86,7 @@ Por lo tanto, si queremos consultar la ciudad "Sevilla", tenemos que hacer una p
 
 Vamos a usar un navegador web para obtener la salida de una forma más visual, si elegimos la opción de *Datos sin procesar*, podremos ver la información devuelta en su formato JSON original:
 
-![openweather](img/openwheather6.png)
+![openweather](img/openweather6.png)
 
 ### Paso 3: Introducción a JSON
 
