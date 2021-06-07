@@ -153,7 +153,7 @@ Vamos a usar el módulo [`requests`](https://docs.python-requests.org/en/master/
 import requests
 ## Pedimos el nombre de la ciudad por teclado
 ciudad=input("Dime el nombre de una ciudad:")
-# Creamos un diccionario con los parametros de la URL
+# Creamos un diccionario con los parámetros de la URL
 parametros={"q":ciudad,
             "units":"metric",
             "APPID":"50ff42ffd87463e3fc038c0166616d7a"}
