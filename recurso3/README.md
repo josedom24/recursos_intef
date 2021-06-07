@@ -56,7 +56,7 @@ Una vez que tenemos nuestra API key, vamos a usar por primera vez una API RESTfu
 
 En realidad el uso es muy parecido a acceder a una página web, es decir, vamos a hacer una petición HTTP a una URL que nos devolverá una información determinada. Normalmente las URL de las API RESTful tienen una serie de parámetros que nos permiten configurar la consulta. Y una vez que hagamos la petición obtendremos una respuesta HTTP que nos devolverá una información con una cierta estructura. La pregunta sería: ¿Cómo sabemos las URL, los parámetros y la estructura de la información recibida de una API RESTful? La respuesta a esta pregunta es: estudiando la documentación de la API RESTful que queremos usar.
 
-Accedemos a la opción *API* y nos aparecen los distintos servicios web que podemos usar. Nosotros para este recurso vamos a usar **Current Weather Data**:
+Accedemos a la opción *API* y nos aparecen los distintos servicios web que podemos usar. Nosotros, para la realización de este recurso, vamos a usar **Current Weather Data**:
 
 ![openwhetaher](img/openwheather4.png)
 
@@ -141,7 +141,7 @@ La consulta anterior que hemos recibido nos ha devuelto la siguiente informació
 }
 ```
 
-Aquí podemos encontrar toda la información meteorológica de la ciudad de Sevilla. Nostros posteriormente nos quedaremos con el objeto cuya clave es `main` donde encontramos la temperatura actual (`temp`), la sensación térmica (`feels_like`), la temperatura mínima (`temp_min`), la máxima (`temp_max`), la presión (`pressure`) y la humedad (`humidity`).
+Aquí podemos encontrar toda la información meteorológica de la ciudad de Sevilla. Nosotros posteriormente nos quedaremos con el objeto cuya clave es `main` donde encontramos la temperatura actual (`temp`), la sensación térmica (`feels_like`), la temperatura mínima (`temp_min`), la máxima (`temp_max`), la presión (`pressure`) y la humedad (`humidity`).
 
 Cuando trabajamos con JSON desde un programa Python, los arrays JSON se convierten en listas Python, y los objetos JSON se convierten en diccionarios Python. Lo veremos en el siguiente punto:
 
