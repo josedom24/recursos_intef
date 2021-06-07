@@ -90,9 +90,9 @@ Vamos a usar un navegador web para obtener la salida de una forma más visual, s
 
 ### Paso 3: Introducción a JSON
 
-El lenguaje de marcas JSON nos sirve para estructurar información de distinto tipo: números, cadenas de caracteres, booleanos, arrays y objetos. Los arrays representa una lista de datos gaurdada entre corchetes (`[` y `]`) y los objetos son colecciones no ordenadas de pares de la forma **<clave>:<valor>**, separados por comas y guardadas entre llaves (`{` y `}`).
+El lenguaje de marcas JSON nos sirve para estructurar información de distinto tipo: números, cadenas de caracteres, booleanos, arrays y objetos. Los arrays representa una lista de datos guardada entre corchetes (`[` y `]`) y los objetos son colecciones no ordenadas de pares de la forma **<clave>:<valor>**, separados por comas y guardadas entre llaves (`{` y `}`).
 
-La consulta anterior que hemos recibido nos ha devuelto la siguiente información:
+La consulta anterior que hemos realizado nos ha devuelto la siguiente información:
 
 ```json
 {
