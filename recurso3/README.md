@@ -36,7 +36,7 @@ Como ya hemos presentado en la introducción del recurso, las páginas web o apl
 
 Los datos son recibidos utilizando el lenguaje HTML y utilizando Hojas de Estílo (CSS) para darle formato. De esta manera la persona recibe está información de manera muy clara.
 
-Pero, ¿y si queremos desarrollar un programa que haga la misma consulta y que pueda procesar esa información de forma automática? En este caso necesitaríamos consulat el servicio web RESTful de openwhether: [https://openweathermap.org/api](https://openweathermap.org/api) y la información recibida vendría estructurada con otro lenguaje de marcado, en nuestro caso utilizaremos JSON. Lo vemos en el siguiente punto.
+Pero, ¿y si queremos desarrollar un programa que haga la misma consulta y que pueda procesar esa información de forma automática? En este caso necesitaríamos consultar el servicio web RESTful de openwhether: [https://openweathermap.org/api](https://openweathermap.org/api) y la información recibida vendría estructurada con otro lenguaje de marcado, en nuestro caso utilizaremos JSON, para que sea fácil procesarlo desde nuestro programa. Lo vemos en el siguiente punto.
 
 ### Paso 2: Usando el servicio web RESTful de OpenWheather
 
