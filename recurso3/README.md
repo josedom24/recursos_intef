@@ -93,8 +93,51 @@ El lenguaje de marcas JSOn nos sirve para estructurar información de distinto t
 
 La consulta anterior que hemos recibido nos ha devuelto la siguiente información:
 
-```
-{"coord":{"lon":-5.9761,"lat":37.3824},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":24.04,"feels_like":23.96,"temp_min":22.95,"temp_max":24.44,"pressure":1017,"humidity":56},"visibility":10000,"wind":{"speed":2.24,"deg":58,"gust":4.47},"clouds":{"all":0},"dt":1623052825,"sys":{"type":2,"id":2011488,"country":"ES","sunrise":1623042197,"sunset":1623094954},"timezone":7200,"id":2510911,"name":"Seville","cod":200}
+```json
+{
+  "coord": {
+    "lon": -5.9761,
+    "lat": 37.3824
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 24.04,
+    "feels_like": 23.96,
+    "temp_min": 22.95,
+    "temp_max": 24.44,
+    "pressure": 1017,
+    "humidity": 56
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2.24,
+    "deg": 58,
+    "gust": 4.47
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1623052825,
+  "sys": {
+    "type": 2,
+    "id": 2011488,
+    "country": "ES",
+    "sunrise": 1623042197,
+    "sunset": 1623094954
+  },
+  "timezone": 7200,
+  "id": 2510911,
+  "name": "Seville",
+  "cod": 200
+}
 ```
 
 Aquí podemos encontrar toda la información meteorológica de la ciudad de Sevilla. Nostros posteriormente nos quedaremos con el objeto cuya calve es `main` donde encontramos la temperatura actual (`temp`), la sensación térmica (`feels_like`), la temperatura mínima (`temp_min`), la máxima (`temp_max`), la presión (`pressure`) u la humedad (`humidity`).
