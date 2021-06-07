@@ -140,13 +140,50 @@ La consulta anterior que hemos recibido nos ha devuelto la siguiente informació
 }
 ```
 
-Aquí podemos encontrar toda la información meteorológica de la ciudad de Sevilla. Nostros posteriormente nos quedaremos con el objeto cuya calve es `main` donde encontramos la temperatura actual (`temp`), la sensación térmica (`feels_like`), la temperatura mínima (`temp_min`), la máxima (`temp_max`), la presión (`pressure`) u la humedad (`humidity`).
+Aquí podemos encontrar toda la información meteorológica de la ciudad de Sevilla. Nostros posteriormente nos quedaremos con el objeto cuya calve es `main` donde encontramos la temperatura actual (`temp`), la sensación térmica (`feels_like`), la temperatura mínima (`temp_min`), la máxima (`temp_max`), la presión (`pressure`) y la humedad (`humidity`).
 
-cuando trabajamos con JSON desde un programa Python, los arrays JSON se convierten en listas Python, y los objetos JSON se convierten en diccionarios Python. Lo veremos en el siguiente punto:
+Cuando trabajamos con JSON desde un programa Python, los arrays JSON se convierten en listas Python, y los objetos JSON se convierten en diccionarios Python. Lo veremos en el siguiente punto:
 
 ### Paso 4: ¿Cómo hacemos un programa Python que haga una consulta al servicio web de OpenWheather?
 
+Vamos a usar el módulos [`requests`](https://docs.python-requests.org/en/master/) para poder hacer peticiones HTTP a la URL del servicio web que vamos a utilizar. El coigo fuente del programa lo podemos encontrar en el fichero [`programa.py`](programa.py) y quedaría de la siguiente forma:
 
+```python
+import requests
+## Pedimos el nombre de la ciudad por teclado
+ciudad=input("Dime el nombre de una ciudad:")
+# Creamos un diccionario con los parametros de la URL
+parametros={"q":ciudad,
+            "units":"metric",
+            "APPID":"50ff42ffd87463e3fc038c0166616d7a"}
+# Realizamos la petición, indicando la URL y los parámetros
+respuesta=requests.get("http://api.openweathermap.org/data/2.5/weather",params=parametros)
+# Si la respuesta devuelve eñ código 200, todo ha ido bien
+if respuesta.status_code == 200:
+    # La respuesta json se covierte en un diccionario
+    datos = respuesta.json()
+    # Se obtienen los valores del diccionario
+    print("La temperatura actual es: ",datos["main"]["temp"]," ºC")
+    print("La sensación térmica es: ",datos["main"]["feels_like"]," ºC")
+    print("La temperatura mínima es: ",datos["main"]["temp_min"]," ºC")
+    print("La temperatura máxima es: ",datos["main"]["temp_max"]," ºC")
+    print("La presión es: ",datos["main"]["pressure"]," hPa")
+    print("La humedad es: ",datos["main"]["humidity"]," %")
+else:
+    print("De esa ciudad no tengo datos.")
+```
+Veamos con detalle el programa:
+
+```bash
+$ python3 programa.py 
+Dime el nombre de una ciudad:Sevilla
+La temperatura actual es:  24.04  ºC
+La sensación térmica es:  23.96  ºC
+La temperatura mínima es:  22.95  ºC
+La temperatura máxima es:  24.44  ºC
+La presión es:  1017  hPa
+La humedad es:  56  %
+```
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
