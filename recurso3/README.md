@@ -164,12 +164,12 @@ if respuesta.status_code == 200:
     # La respuesta json se covierte en un diccionario
     datos = respuesta.json()
     # Se obtienen los valores del diccionario
-    print("La temperatura actual es: ",datos["main"]["temp"]," ºC")
-    print("La sensación térmica es: ",datos["main"]["feels_like"]," ºC")
-    print("La temperatura mínima es: ",datos["main"]["temp_min"]," ºC")
-    print("La temperatura máxima es: ",datos["main"]["temp_max"]," ºC")
-    print("La presión es: ",datos["main"]["pressure"]," hPa")
-    print("La humedad es: ",datos["main"]["humidity"]," %")
+    print("La temperatura actual es:",datos["main"]["temp"],"ºC")
+    print("La sensación térmica es:",datos["main"]["feels_like"],"ºC")
+    print("La temperatura mínima es:",datos["main"]["temp_min"],"ºC")
+    print("La temperatura máxima es:",datos["main"]["temp_max"],"ºC")
+    print("La presión es:",datos["main"]["pressure"],"hPa")
+    print("La humedad es:",datos["main"]["humidity"],"%")
 else:
     print("De esa ciudad no tengo datos.")
 ```
@@ -188,12 +188,12 @@ Veamos la ejecución del programa:
 ```bash
 $ python3 programa.py 
 Dime el nombre de una ciudad:Sevilla
-La temperatura actual es:  24.04  ºC
-La sensación térmica es:  23.96  ºC
-La temperatura mínima es:  22.95  ºC
-La temperatura máxima es:  24.44  ºC
-La presión es:  1017  hPa
-La humedad es:  56  %
+La temperatura actual es: 24.04 ºC
+La sensación térmica es: 23.96 ºC
+La temperatura mínima es: 22.95 ºC
+La temperatura máxima es: 24.44 ºC
+La presión es: 1017 hPa
+La humedad es: 56 %
 ```
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
