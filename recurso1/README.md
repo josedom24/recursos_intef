@@ -2,7 +2,9 @@
 
 En la actualidad la educación debe preparar al alumnado para vivir en el mundo digital, en el que ya se está desarrollando. Esa formación no se límita a enseñar la utilización de determinadas herramientas informáticas (a ser consumidores digitales), sino que debe capacitar a la persona para conocer el lenguaje digital que le posibilite adquirir las destrezas necesarias para relacionarse con el mundo digital de forma completa (ser creadores digitales). Para conseguir esta segunda vertiente es necesario desarrollar en los jóvenes el pensamiento computacional, como metodología de trabajo y la programación, como herramienta para resolver problemas.
 
-Existen muchos lenguajes de programación, que nos dan la posibilidad de resolver problemas por medio de programas de ordenador. El lenguaje Python puede ser un candidato muy adecuado para introducir a los jóvenes, de las distintas etapas educativas, en la programación, por distintos motivos: aunque es un lenguaje muy completo y potente, su sintaxis es sencilla y facilita el aprendizaje de la programación, además al ser un lenguaje interpretado, la ejecución de los programas es sencilla, sin necesidad de ningún proceso complicado. Python, es mutltiplataforma, por lo que es fácil de trabajar con los distintos sistemas operativos que tenemos a nuestra disposición.
+Existen muchos lenguajes de programación, que nos dan la posibilidad de resolver problemas por medio de programas de ordenador. El lenguaje Python puede ser un candidato muy adecuado para introducir a los jóvenes, de las distintas etapas educativas, en la programación. 
+
+Podemos elegir Python, como lenguaje para introducirnos en la programación, por distintos motivos: aunque es un lenguaje muy completo y potente, su sintaxis es sencilla y facilita el aprendizaje de la programación, además al ser un lenguaje interpretado, la ejecución de los programas es sencilla, sin necesidad de ningún proceso complicado. Python, es mutltiplataforma, por lo que es fácil de trabajar con los distintos sistemas operativos que tenemos a nuestra disposición.
 
 ## ¿Qué debo saber para empezar a trabajar con este recurso?
 
@@ -12,7 +14,7 @@ Secundaria y Bachillerato
 
 ### Asignatura/s
 
-El presente recurso se puede desarrollar en cualquier asignatura de Secundaria o Bachillerato, donde se esté haciendo una introducción a la programación. Asignaturas como Tecnología, TIC o incluso Matemáticas. 
+El presente recurso se puede desarrollar en cualquier asignatura de Secundaria o Bachillerato, donde se esté haciendo una introducción a la programación. Asignaturas como Tecnología, TIC o incluso, Matemáticas. 
 
 ### ¿Se requieren conocimientos previos?¿cuáles son?
 
@@ -53,7 +55,7 @@ En este caso vamos a realizar tres aproximaciones para resolver el problema comp
 
 En esta primera aproximación el problema sería muy sencillo: Vamos a generar una multiplicación con números aleatorios (entre 1 y 10), le pedimos al usuario la solución y el programa nos dice si la solución es correcta o incorrecta.
 
-¿Cómo generamos números aleatorios en Python?, en realidad en un ordenador generamos números [pseudoaleatorios](https://es.wikipedia.org/wiki/N%C3%BAmero_pseudoaleatorio), y para ello podemos usar la función `randint` del módulo `ramdom`. Veamos un ejemplo:
+¿Cómo generamos números aleatorios en Python?, en realidad en un ordenador generamos números [pseudoaleatorios](https://es.wikipedia.org/wiki/N%C3%BAmero_pseudoaleatorio), y para ello podemos usar la función `randint` del módulo `random`. Veamos un ejemplo:
 
 Si queremos generar números pseudoaleatorio entre el 2 y el 10, podemos hacer el siguiente programa (que podemos guardar en un fichero `programa1.py`):
 
@@ -79,7 +81,7 @@ Ya que sabemos generar números enteros aleatorios, para resolver nuestro primer
 3. Imprimir la multiplicación y pedir al usuario la solución.
 4. Si la solución dada por el usuario coincide con la solución calculada, el usuario habrá realizado de forma correcta la multiplicación, en caso contrario habrá cometido un error.
 
-Veamos una posible solución al problema, haríamos un programa python que guardaríamos en el fichero `multiplicacion1.py`:
+Veamos una posible solución al problema, haríamos un programa python que guardaríamos en el fichero [`multiplicacion1.py`](multiplicacion1.py):
 
 ```python
 from random import randint
@@ -118,7 +120,7 @@ Veamos algunos aspectos del programa:
 2. La variable `solucion` también será de tipo entero, ya que al multiplicar dos valores enteros el resultado también es entero.
 3. La función `print` nos permite imprimir en pantalla: imprimimos el valor de la variable `factor1`, el carácter "x", el valor de la variable `factor2` y el carácter `=`. El parámetro `end=""` lo utilizamos para que no haga un salto de línea y la siguiente instrucción se ejecute en la misma línea.
 4. La función `input` lee una cadena de caracteres por teclado, en este caso usamos la función `int` para convertir esa cadena de caracteres en un número entero, que guardaremos en la variable `solucion_de_usuario`.
-5. La instrucción `if` nos permite ejecutar un bloque de código u otro según el resultado de una condición lógica. En este caso esa condición será la comprobación de la solución calculada (variable `solucion`) y la solución dada por el usuario (variable `solucion_de_usuario`). Para comprobar si dos valores son iguales usamos el operador `==`. Si los dos valores son iguales, se ejecutará la primera instrucción `print`, en caso contrario, se ejecutará la segunda. En python es muy importante el sangrado de código, es decir los bloques de instrucciones que se ejecutan en el `if` deben estar tabulados.
+5. La instrucción `if` nos permite ejecutar un bloque de código u otro según el resultado de una condición lógica. En este caso esa condición será la comprobación de si la solución calculada (variable `solucion`) y la solución dada por el usuario (variable `solucion_de_usuario`) son iguales. Para comprobar si dos valores son iguales usamos el operador `==`. Si los dos valores son iguales, se ejecutará la primera instrucción `print`, en caso contrario, se ejecutará la segunda. En python es muy importante el sangrado de código, es decir los bloques de instrucciones que se ejecutan en el `if` deben estar tabulados.
 
 ### Segunda aproximación: Generar varias multiplicaciones
 
@@ -136,9 +138,9 @@ En esta caso creamos un rango de valores (`range`) que nos permite repetir la in
 Por lo tanto para resolver nuestro segundo problema deberemos:
 
 1. Pedir la cantidad de multiplicaciones que se van a generar.
-2. Crear un bucle que repita las instrucciones del programa anterior tantas veces como hayamos indicado.
+2. Crear un bucle que repita las instrucciones del programa anterior (primera aproximación) tantas veces como hayamos indicado.
 
-Para ello creamos el siguiente programa, que guardamos en el fichero `multiplicacion2.py`:
+Para ello creamos el siguiente programa, que guardamos en el fichero [`multiplicacion2.py`](multiplicacion2.py):
 
 ```python
 from random import randint
@@ -184,7 +186,7 @@ Estudiemos algunos aspectos del programa:
 
 Finalmente vamos a introducir el uĺtimo elemento a nuestro problema: queremos llevar la cuenta de las respuestas correctas, para que al finalizar el programa nos de una nota (de 0 a 10) y que nos felicite si hemos sacado más de un 9. Para calcular la nota podemos usar la formula: `multiplicaciones_correctas/total_multiplicaciones * 10`.
 
-Em este caso necesitamos contar las respuestas correctas, para ello vamos a usar un **contador**. Un contador es una variable entera que nos permite contar un suceso, en este caso vamos a contar las multiplicaciones correctas. El contador se inicializa a un valor inicial, y se va incrementando cada vez que ocurre el suceso que queremos contar:
+En este caso necesitamos contar las respuestas correctas, para ello vamos a usar un contador. Un contador es una variable entera que nos permite contar un suceso, en este caso vamos a contar las multiplicaciones correctas. El contador se inicializa a un valor inicial, y se va incrementando cada vez que ocurre el suceso que queremos contar.
 
 La solución del problema quedaría de la siguiente forma:
 
@@ -200,7 +202,7 @@ La solución del problema quedaría de la siguiente forma:
 5. Imprimimos la nota
 6. Si la nota es mayor o igual que 9 mostramos un mensaje de felicitación.
 
-El programa quedaría de la siguiente manera (`multiplicacion3.py`):
+El programa quedaría de la siguiente manera ([`multiplicacion3.py`](multiplicacion3.py)):
 
 ```python
 from random import randint
@@ -250,11 +252,11 @@ Tu nota ha sido 6.666666666666666
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
-Esta actividad puede ayudar al alumno a afianzar conceptos ya estudiado sobre introducción a la programación. Profundizando en la metodología de análisis del problema y en la realización de programas en Python que resuelvan dicho problema. Además el hecho de trabajar con ordenadores es muy motivador para el alumnado, que puede ir probando si el programa realiza las operaciones que le hemos programado.
+Esta actividad puede ayudar al alumno a afianzar conceptos ya estudiado sobre introducción a la programación, profundizando en la metodología de análisis del problema y en la realización de programas en Python que resuelvan dicho problema. Además el hecho de trabajar con ordenadores es muy motivador para el alumnado, que puede ir comprobando si el programa realiza las operaciones que le hemos programado.
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
-Aunque tradicionalmente la enseñanza de la programación es muy práctica y se hacen muchos ejercicios, en muchas ocasiones, sobre todo cuando el alumno se está iniciando en el desarrollo de programas, no se pone mucha atención en las distintas metodologías que nos facilitan el análisis del programa y el diseño de una posible solución.
+Aunque tradicionalmente la enseñanza de la programación es muy práctica y se realizan muchos ejercicios, en muchas ocasiones, sobre todo cuando el alumno se está iniciando en el desarrollo de programas, no se pone mucha atención en las distintas metodologías que nos facilitan el análisis del programa y el diseño de una posible solución.
 
 Con este recurso se introduce una metodología que puede ayudar al alumno a enfrentarse con problemas un poco más complejos: se analiza el problema completo, pero se van dando soluciones a partes del problema más simples, y se va añadiendo elementos del problema en sucesivas aproximaciones, hasta realizar un programa que resuelve el problema completo.
 
