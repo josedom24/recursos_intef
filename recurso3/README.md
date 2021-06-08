@@ -16,10 +16,22 @@ Bachillerato y Formación Profesional
 
 ### Asignatura/s
 
+En Bachillerato cualquier asignatura donde se este impartiendo conceptos de introducción a programación con Python. En Formación Profesional, este recurso puede ser apropiado, para los ciclos de la Familia Profesional de Informática donde se imparta la introducción a la Programación.
+
 ### ¿Se requieren conocimientos previos?¿cuáles son?
+
+El recurso tiene un nivel de dificultad medio. Es necesario que el alumnado tenga conocimientos previos de programación con Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas, trabajo con listas y diccionarios.
+
+Estaría muy bien que el alumno tenga algunos conocimientos del protocolo HTTP: como funciona las peticiones a las páginas web, qué es una petición y una respuesta HTTP,... DE todas maneras el recurso se puede realizar sin tener estos conocimientos.
 
 ### ¿Qué objetivos se persigue con el recurso?
 
+Los objetivos de este recurso son los siguientes:
+
+* Introducir el concepto de **Servicio Web**, como mecanismo de comunicación entre programas en internet. En este recurso introduciremos los Servicios Web del tio RESTful API.
+* Introducir el lenguaje de marcas JSON, que actualmente es uno de los más usado para estructurar la información que se transmite por internet.
+* Aprender hacer programas en Python que se comuniquen con un Servicio Web y que nos posibilite el tratamiento automático de la información que vamos a consumir del Servicio Web.
+* Desarrollar en los alumnos la posibilidad de que hagan programas que traten de forman automática información, y la necesidad de que cierta información que podemos obtener, por ejemplo de la administración pública, tenga mecanismos y estructuras abiertas para que sea sencillo su tratamiento.
 
 ### ¿En qué consiste el recurso?
 
@@ -198,9 +210,14 @@ La humedad es: 56 %
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
+En muchas ocasiones, los programas que se desarrollan en las asignaturas de iniciación a la programación no trabajan con una gran cantidad de datos, o estos datos no son reales. 
+
+Con el desarrollo de programas que se comuniquen con los Servicios WEb que tenemos disponibles en Internet, se pueden hacer programas más reales que nos posibilite el trabajo con información más real.
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
+El trabajo con Servicios Web nos da la posibilidad de crear programa que obtengan información de distinto tipo, relacionada con distintas asignaturas. Sería muy sencillo desarrollar proyectos en el que se desarrollen programas para el tratamiento automático de información que se puede usar en otras asignaturas: por ejemplo, recogida de datos para realizar cálculos estadísticos en la asignatura de matemáticas, recolección y procesamiento de datos demográficos en la asignatura de geografía, ...
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
 
+Necesitamos un ordenador con Python 3 y con la librería `requests` instalada. Para codificar el programa podemos usar cualquier editor de texto.
