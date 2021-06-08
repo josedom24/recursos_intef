@@ -250,4 +250,4 @@ Otra ventaja que podemos obtener de utilizar la librería pyGame, es que el alum
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
 
-Necesitamos un ordenador con Python 3 y con la librería pyGame instalada. Para codificar el programa podemos usar cualquier editor de texto.
+Necesitamos un ordenador con Python 3 y con la librería pyGame instalada (se puede seguir esta [guía](https://www.pygame.org/wiki/GettingStarted)). Para codificar el programa podemos usar cualquier editor de texto.

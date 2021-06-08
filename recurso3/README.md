@@ -220,4 +220,4 @@ El trabajo con Servicios Web nos da la posibilidad de crear programa que obtenga
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
 
-Necesitamos un ordenador con Python 3 y con la librería `requests` instalada. Para codificar el programa podemos usar cualquier editor de texto.
+Necesitamos un ordenador con Python 3 y con la librería `requests` instalada (se puede seguir esta [guía](https://docs.python-requests.org/en/latest/user/install/#install)). Para codificar el programa podemos usar cualquier editor de texto.
