@@ -24,8 +24,9 @@ Puede ser un recurso muy acertado para repasar los conceptos básicos sobre la i
 
 ### ¿Qué objetivos se persigue con el recurso?
 
-El principal objetivo es aprender como solucionar un problema, por medio de un programa de ordenador. En este caso es un problema matemático. 
-Vamos a realizar distintas aproximaciones a la solución del problema que nos permitan repasar distintos conceptos sobre la resolución de problemas con ordenadores:
+El principal objetivo es introducir una metodología de trabajo para facilitar al alumno la resolución de problemas, por medio de programas de ordenador. En este recurso vamos a resolver un problema matemático. 
+
+La metodología que vamos a utilizar consiste en realizar distintas aproximaciones a la solución del problema que nos permitan repasar distintos conceptos sobre la resolución de problemas con ordenadores:
 
 * Analizar el problema
 * Diseñar una posible solución al problema.
