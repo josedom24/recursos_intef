@@ -44,11 +44,11 @@ Concretamente al desarrollar el programa en Python vamos a repasar distintos con
 
 El problema que queremos resolver es el siguiente:
 
-Uno de los objetivos fundamentales de los alumnos de primaria es aprender muy bien las tablas de multiplicar. Vamos a crear un programa que ayude a los alumnos de primaria a repasar las tablas de multiplicar. Para ello, nuestro programa irá generando distintas multiplicaciones y nos irá pidiendo la solución. El programa nos pedirá, al principio, el número de multiplicaciones que se van a generar. Y al finalizar nos dará la puntuación que hemos obtenido, y si sacamos más de un 9, el programa nos felicitará.
+Uno de los objetivos fundamentales de los alumnos de primaria es aprender muy bien las tablas de multiplicar. Vamos a crear un programa que ayude a los alumnos a repasar las tablas de multiplicar. Para ello, nuestro programa irá generando distintas multiplicaciones y nos irá pidiendo la solución. El programa nos pedirá, al principio, el número de multiplicaciones que se van a generar. Y al finalizar nos dará la puntuación que hemos obtenido, y si sacamos más de un 9, el programa nos felicitará.
 
 ## Y ahora que sé para que sirve, ¿cómo lo pongo en práctica?
 
-Una de la técnicas para analizar un programa y diseñar un programa que resuelve el problema, es simplificarlo en problemas más sencillos que seamos capaces de solucionar de una manera sencilla y en sucesivas iteraciones ir introducción un nivel mayor de complejidad y solucionarlo a partir de lo que teníamos construido. 
+Una de la técnicas para analizar un problema y diseñar un programa que lo resuelva, es simplificarlo en problemas más sencillos que seamos capaces de solucionar de una manera sencilla y en sucesivas iteraciones ir introducción un nivel mayor de complejidad y solucionarlo a partir de lo que teníamos construido. 
 
 En este caso vamos a realizar tres aproximaciones para resolver el problema completo:
 
