@@ -253,13 +253,13 @@ Tu nota ha sido 6.666666666666666
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
-Esta actividad puede ayudar al alumno a afianzar conceptos ya estudiado sobre introducción a la programación, profundizando en la metodología de análisis del problema y en la realización de programas en Python que resuelvan dicho problema. Además el hecho de trabajar con ordenadores es muy motivador para el alumnado, que puede ir comprobando si el programa realiza las operaciones que le hemos programado.
+Esta actividad puede ayudar al alumno a afianzar conceptos ya estudiados sobre programación, profundizando en la metodología de análisis del problema y en la realización de programas en Python. Además el hecho de trabajar con ordenadores es muy motivador para el alumnado, que puede ir comprobando si el programa realiza las operaciones que le hemos programado.
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
-Aunque tradicionalmente la enseñanza de la programación es muy práctica y se realizan muchos ejercicios, en muchas ocasiones, sobre todo cuando el alumno se está iniciando en el desarrollo de programas, no se pone mucha atención en las distintas metodologías que nos facilitan el análisis del programa y el diseño de una posible solución.
+Aunque tradicionalmente la enseñanza de la programación es muy práctica y se realizan muchos ejercicios, en muchas ocasiones, sobre todo cuando el alumno se está iniciando en el desarrollo de programas, no se pone mucha atención en las distintas metodologías que nos facilitan el análisis del problema y el diseño de una posible solución.
 
-Con este recurso se introduce una metodología que puede ayudar al alumno a enfrentarse con problemas un poco más complejos: se analiza el problema completo, pero se van dando soluciones a partes del problema más simples, y se va añadiendo elementos del problema en sucesivas aproximaciones, hasta realizar un programa que resuelve el problema completo.
+Con este recurso se introduce una metodología que puede ayudar al alumno a enfrentarse con problemas un poco más complejos: se analiza el problema completo, pero se van dando soluciones parciales más simples, y se va añadiendo elementos del problema en sucesivas aproximaciones, hasta realizar un programa que resuelve el problema completo.
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
 
