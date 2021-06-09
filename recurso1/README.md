@@ -185,9 +185,9 @@ Estudiemos algunos aspectos del programa:
 
 ### Tercera aproximación: Generación de multiplicaciones y puntuación obtenida
 
-Finalmente vamos a introducir el uĺtimo elemento a nuestro problema: queremos llevar la cuenta de las respuestas correctas, para que al finalizar el programa nos de una nota (de 0 a 10) y que nos felicite si hemos sacado más de un 9. Para calcular la nota podemos usar la formula: `multiplicaciones_correctas/total_multiplicaciones * 10`.
+Finalmente vamos a introducir el último elemento a nuestro problema: queremos saber las respuestas correctas, para que al finalizar el programa nos de una nota (de 0 a 10) y que nos felicite si hemos sacado más de un 9. Para calcular la nota podemos usar la formula: `multiplicaciones_correctas/total_multiplicaciones * 10`.
 
-En este caso necesitamos contar las respuestas correctas, para ello vamos a usar un contador. Un contador es una variable entera que nos permite contar un suceso, en este caso vamos a contar las multiplicaciones correctas. El contador se inicializa a un valor inicial, y se va incrementando cada vez que ocurre el suceso que queremos contar.
+En este caso necesitamos contar las respuestas correctas, para ello vamos a usar un contador. Un contador es una variable entera que nos permite contar un suceso. El contador se inicializa a un valor inicial, y se va incrementando cada vez que ocurre el suceso que queremos contar.
 
 La solución del problema quedaría de la siguiente forma:
 
