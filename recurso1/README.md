@@ -28,7 +28,7 @@ El principal objetivo es introducir una metodología de trabajo para facilitar a
 
 La metodología que vamos a utilizar consiste en realizar distintas aproximaciones a la solución del problema que nos permitan repasar distintos conceptos sobre el ciclo de vida del desarrollo de programas:
 
-* Análisis el problema
+* Análisis del problema.
 * Diseño de una posible solución al problema.
 * Codificación de un programa python que resuelva el problema.
 * Verificación y comprobación de que realmente el programa resuelve el problema.
