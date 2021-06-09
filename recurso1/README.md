@@ -48,7 +48,7 @@ Uno de los objetivos fundamentales de los alumnos de primaria es aprender muy bi
 
 ## Y ahora que sé para que sirve, ¿cómo lo pongo en práctica?
 
-Una de la técnicas para analizar un problema y diseñar un programa que lo resuelva, es simplificarlo en problemas más sencillos que seamos capaces de solucionar de una manera sencilla y en sucesivas iteraciones ir introducción un nivel mayor de complejidad y solucionarlo a partir de lo que teníamos construido. 
+Una de las técnicas para analizar un problema y diseñar un programa que lo resuelva, consiste en simplificar el problema en otros más sencillos que seamos capaces de solucionar de una manera simple y en sucesivas iteraciones, ir introduciendo un nivel mayor de complejidad y solucionarlo a partir de lo que teníamos construido. 
 
 En este caso vamos a realizar tres aproximaciones para resolver el problema completo:
 
