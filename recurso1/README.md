@@ -26,12 +26,12 @@ Puede ser un recurso muy acertado para repasar los conceptos básicos sobre la i
 
 El principal objetivo es introducir una metodología de trabajo para facilitar al alumno la resolución de problemas, por medio de programas de ordenador. En este recurso vamos a resolver un problema matemático. 
 
-La metodología que vamos a utilizar consiste en realizar distintas aproximaciones a la solución del problema que nos permitan repasar distintos conceptos sobre la resolución de problemas con ordenadores:
+La metodología que vamos a utilizar consiste en realizar distintas aproximaciones a la solución del problema que nos permitan repasar distintos conceptos sobre el ciclo de vida del desarrollo de programas:
 
-* Analizar el problema
-* Diseñar una posible solución al problema.
-* Codificar un programa python que resuelva el problema.
-* Verificar y comprobar que realmente el programa resuelve el problema
+* Análisis el problema
+* Diseño de una posible solución al problema.
+* Codificación de un programa python que resuelva el problema.
+* Verificación y comprobación de que realmente el programa resuelve el problema.
 
 Concretamente al desarrollar el programa en Python vamos a repasar distintos conceptos:
 
