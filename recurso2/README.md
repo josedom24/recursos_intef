@@ -29,7 +29,7 @@ Los objetivos que se van a conseguir con la realización de este recurso son:
 * Conocer la funcionalidades básicas de la librería pyGame, para perimir que los alumnos puedan desarrollar juegos utilizando los conocimientos de programación que poseen.
 * Repasar los conceptos fundamentales de programación, de una manera más atractiva para los alumnos.
 * Desarrollar la creatividad del alumno. Una vez que aprendan, con la realización de este recurso, los fundamentos para desarrollar juegos con pyGame, el alumno estará capacitado para seguir explorando las posibilidades que ofrece el desarrollo de videojuegos.
-* Fomentar el trabajo en grupo. Como hemos apuntando anteriormente, el desarrollo de videojuegos es una actividad multidisplinar, por lo que sería muy sencillo que un grupo de alumnos, utilizando el trabajo colaborativo, puedan desarrollar algún proyecto relacionado con el desarrollo de videojuegos.
+* Fomentar el trabajo en grupo. Como hemos apuntando anteriormente, el desarrollo de videojuegos es una actividad multidisplinar, por lo que sería muy sencillo que un grupo de alumnos, utilizando trabajo colaborativo, puedan desarrollar algún proyecto relacionado con el desarrollo de videojuegos.
 
 ### ¿En qué consiste el recurso?
 
