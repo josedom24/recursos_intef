@@ -33,7 +33,7 @@ Los objetivos que se van a conseguir con la realización de este recurso son:
 
 ### ¿En qué consiste el recurso?
 
-En este recurso vamos a introducir el desarrollo de un pequeño juego, usando la librería pyGame de Python. Vamos a crear un juego donde tenemos una pelota que va rebotando en los bordes de la ventana y controlamos una plataforma en la parte inferior de la pantalla. El jugador tiene que evitar que la pelota llegue al borde inferior de la ventana.
+En este recurso vamos a introducir el desarrollo de un pequeño juego, usando la librería pyGame de Python. Vamos a crear un juego donde tenemos una pelota que va rebotando en los bordes de la ventana y controlamos una plataforma en la parte inferior de la pantalla que hace rebotar la pelota. El jugador tiene que evitar que la pelota llegue al borde inferior de la ventana.
 
 ## Y ahora que sé para que sirve, ¿cómo lo pongo en práctica?
 
