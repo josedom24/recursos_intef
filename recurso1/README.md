@@ -18,7 +18,7 @@ El presente recurso se puede desarrollar en cualquier asignatura de Secundaria o
 
 ### ¿Se requieren conocimientos previos?¿cuáles son?
 
-El recurso tiene un nivel de dificultad bajo. Se tendría que desarrollar en clase, una vez que se tuviera alguna experiencia previa de algunos conceptos sobre programación y haber trabajado con el lenguaje Python. En concreto sería necesario que el alumno estuviera familiarizado con algunos conceptos: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
+El recurso tiene un nivel de dificultad bajo. Se tendría que desarrollar en clase, una vez que el alumno estuviera familiarizado con algunos conceptos: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
 
 Puede ser un recurso muy acertado para repasar los conceptos básicos sobre la introducción a la programación con Python.
 
