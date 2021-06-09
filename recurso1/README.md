@@ -35,9 +35,9 @@ La metodología que vamos a utilizar consiste en realizar distintas aproximacion
 
 Concretamente al desarrollar el programa en Python vamos a repasar distintos conceptos:
 
-* Estructura de un programa python
-* Trabajar con datos, tipos de datos y variables
-* Trabajar con funciones 
+* Estructura de un programa python.
+* Trabajar con datos, tipos de datos y variables.
+* Trabajar con funciones.
 * Utilizar los distintos estructuras de programación: secuencial, alternativa y repetitiva para desarrollar el algoritmo que resuelve el problema.
 
 ### ¿En qué consiste el recurso?
