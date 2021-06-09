@@ -1,6 +1,6 @@
 # pyGame: Realizando juegos con Python
 
-Aunque el desarrollo de videojuegos en la actualidad, es una actividad multidisplinar, en la que se necesita a muchos profesionales de diversos campos, puede ser muy adecuada para introducir a nuestros alumnos en la programación, y en el desarrollo del pensamiento computacional. 
+Aunque el desarrollo de videojuegos en la actualidad, es una actividad multidisplinar, en la que se necesita a muchos profesionales de diversos campos, puede ser muy adecuado para introducir a nuestros alumnos en la programación, y en el desarrollo del pensamiento computacional. 
 
 La programación de videojuegos es un caso particular de desarrollo de software, por lo tanto vamos a conseguir potenciar en nuestro alumnos las capacidades propias de las enseñanzas de la programación, como pueden ser: la abstracción, los metodología que nos permite encontrar soluciones a determinados problemas y el desarrollo de programas de ordenador que solucionen dichos problemas. Pero además podemos conseguir que nuestros alumnos consigan otras destrezas, como pueden ser: el trabajo colaborativo en grupo, el desarrollo de la creatividad o el aumento de la motivación y la confianza en afrontar nuevos retos.
 
