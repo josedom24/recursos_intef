@@ -172,10 +172,10 @@ ball = pygame.image.load("ball.png")
 ballrect = ball.get_rect()
 speed = [4,4]
 ballrect.move_ip(0,0)
-# Crea un objeto bate, y obtengo su rectángulo
+# Crea el objeto bate, y obtengo su rectángulo
 bate = pygame.image.load("bate.png")
 baterect = bate.get_rect()
-# Pongo el bate en en la parte inferior de la pantalla
+# Pongo el bate en la parte inferior de la pantalla
 baterect.move_ip(240,450)
 jugando = True
 while jugando:
@@ -220,7 +220,7 @@ Y ya podemos ejecutar el programa (`python3 ejercicio2.py`):
 
 ### Sesión 4: Terminamos nuestro juego
 
-En esta sesión no vamos a explicar el código del último ejemplo. El alumno, estudiando el código del programa [`ejercicio4.py`](ejercicio4.py) tendrá que buscar las instrucciones que hemos añadido y que nos permiten realizar las siguientes cosas:
+En esta sesión no vamos a explicar el código del último ejemplo. El alumno, estudiando el código del programa [`ejercicio4.py`](ejercicio4.py) tendrá que buscar las instrucciones que hemos añadido y que nos permiten realizar las siguientes mejoras:
 
 1. En cada ejecución la pelota tiene una velocidad distinta.
 2. Ahora la pelota, no se mueve en diagonales.

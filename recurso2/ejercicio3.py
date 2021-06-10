@@ -6,10 +6,10 @@ ball = pygame.image.load("ball.png")
 ballrect = ball.get_rect()
 speed = [4,4]
 ballrect.move_ip(0,0)
-# Crea un objeto bate, y obtengo su rectángulo
+# Crea el objeto bate, y obtengo su rectángulo
 bate = pygame.image.load("bate.png")
 baterect = bate.get_rect()
-# Pongo el bate en en la parte inferior de la pantalla
+# Pongo el bate en la parte inferior de la pantalla
 baterect.move_ip(240,450)
 jugando = True
 while jugando:
