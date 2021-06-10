@@ -88,7 +88,7 @@ Veamos con detalle el programa:
     * En el bucle principal se actúa sobre los elementos de la ventana. En nuestro caso no tenemos ninguno.
     * Se borran los posibles elementos que tengamos, pintando la pantalla de un color: `ventana.fill((252, 243, 207))`. en este caso usando la notación [RGB](https://es.wikipedia.org/wiki/RGB) lo pintamos de amarillo claro.
     * Volvemos a pintar los elementos en su nueva posición: `pygame.display.flip()`, controlando en todo momento que la frecuencia de refresco de la imagen sea de 60 [fps](https://es.wikipedia.org/wiki/Fotogramas_por_segundo).
-4. Si salimos del bucle principal se he terminado el programa: `pygame.quit()`.
+4. Si salimos del bucle principal se ha terminado el programa: `pygame.quit()`.
 
 Si ejecutamos el programa: `python3 ejemplo1.py`, nos debe aparecer una ventana como esta:
 
@@ -96,20 +96,20 @@ Si ejecutamos el programa: `python3 ejemplo1.py`, nos debe aparecer una ventana 
 
 ### Sesión 2: Añadimos la pelota a nuestro juego
 
-En esta sesión vamos a modificar el ejemplo anterior, para incluir el primer objeto a nuestro juego: una pelota que se moverá e ira rebotando por los bordes de la ventana.
+En esta sesión vamos a modificar el ejemplo anterior, para incluir el primer objeto a nuestro juego: una pelota que se moverá e irá rebotando por los bordes de la ventana.
 
-La pelota va a ser un imagen que tenemos en nuestro directorio: [`ball.png`](ball.png). El [`ejercicio2.py`](ejercicio2.py) quedaría de la siguiente forma:
+La pelota va a ser una imagen que tenemos en nuestro directorio: [`ball.png`](ball.png). El [`ejercicio2.py`](ejercicio2.py) quedaría de la siguiente forma:
 
 ```python
 import pygame
 pygame.init()
 ventana = pygame.display.set_mode((640,480))
 pygame.display.set_caption("ejercicio 2")
-# Crea el objeto pelota.
+# Crea el objeto pelota
 ball = pygame.image.load("ball.png")
 # Obtengo el rectángulo del objeto anterior
 ballrect = ball.get_rect()
-# Incializo los valores con los que se van a mover la pelota
+# Inicializo los valores con los que se van a mover la pelota
 speed = [4,4]
 # Pongo la pelota en el origen de coordenadas
 ballrect.move_ip(0,0)
@@ -145,10 +145,10 @@ Para mover un objeto necesitaremos dos valores: uno para indicar el desplazamien
 
 Ya podemos explicar las nuevas instrucciones que hemos incluido para mover la pelota:
 
-1. A partir de una imagen png, creamos un objeto imagen (`ball = pygame.image.load("ball.png")`), pero como hemos comentado vamos a posicionar el rectángulo que ocupa la imagen, para obtener dicho rectángulo hemos ejecutado `ballrect = ball.get_rect()`.
+1. A partir de una imagen png, creamos un objeto imagen (`ball = pygame.image.load("ball.png")`), pero como hemos comentado vamos a posicionar el rectángulo que ocupa la imagen. Para obtener dicho rectángulo hemos ejecutado `ballrect = ball.get_rect()`.
 2. Inicializamos una lista con dos valores, que llamamos `speed`. El primer valor representa el desplazamiento horizontal, y el segundo el desplazamiento vertical. Lo utilizaremos para mover la pelota.
 3. Posicionamos la pelota en el origen de coordenadas: `ballrect.move_ip(0,0)`.
-4. Dentro del bucle del juego: Movemos la pelota con los datos guardados en la lista `speed`: `ballrect = ballrect.move(speed)`.
+4. Dentro del bucle del juego: movemos la pelota con los datos guardados en la lista `speed`: `ballrect = ballrect.move(speed)`.
 5. Y comprobamos si ha llegado a algún borde: 
     * Podemos obtener la posición del rectángulo que representa la pelota con `ballrect.left` (posición izquierda), `ballrect.rigth` (posición derecha), `ballrect.top` (posición superior) y `ballrect.bottom` (posición inferior).
     * Si la posición izquierda es menor que 0 o la posición derecha es mayor que la anchura de la ventana (`ventana.get_width()`) habríamos tocado los bordes laterales. En esta situación cambiamos el signo del primer dato guardado en `speed`, es decir, si se movía a la derecha ahora se moverá a la izquierda, y al contrario.

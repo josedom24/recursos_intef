@@ -2,11 +2,11 @@ import pygame
 pygame.init()
 ventana = pygame.display.set_mode((640,480))
 pygame.display.set_caption("Ejemplo 2")
-# Crea el objeto pelota.
+# Crea el objeto pelota
 ball = pygame.image.load("ball.png")
 # Obtengo el rectángulo del objeto anterior
 ballrect = ball.get_rect()
-# Incializo los valores con los que se van a mover la pelota
+# Inicializo los valores con los que se van a mover la pelota
 speed = [4,4]
 # Pongo la pelota en el origen de coordenadas
 ballrect.move_ip(0,0)
