@@ -47,7 +47,7 @@ Lo primero que tenemos que entender es la estructura que va a tener los juegos q
 
 1. **Se crea y configura la ventana del juego**, con los elementos que va a tener nuestro juego.
 2. **Se comprueban los eventos**: Dentro de un bucle, comprobamos los posibles eventos que se han producido, por ejemplo, hemos pulsado el botón de cierre de la ventana y el juego concluye, o hemos pulsado una determinada tecla,...
-3. **Se actualiza la pantalla**: Según la lógica del juego o de algún evento que haya sucedido, se interacciona con los elementos de la ventana (se mueve la pelota, se mueve la plataforma,...) y se vuelve a dibujar los elementos de la pantalla.
+3. **Se actualiza la pantalla**: Según la lógica del juego o de algún evento que haya sucedido, se modifican los elementos (se mueve la pelota, se mueve la plataforma,...) y se vuelve a dibujar en la pantalla.
 
 En esta primera sesión vamos a crear un programa, que nos muestra una ventana sin ningún elemento. Este programa puede servir a los alumnos como plantilla para que desarrollen sus propios juegos. El primer ejemplo lo tenemos en el fichero [`ejercicio1.py`](ejercicio1.py) y sería el siguiente:
 
