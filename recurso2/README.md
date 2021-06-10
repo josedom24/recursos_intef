@@ -223,11 +223,11 @@ Y ya podemos ejecutar el programa (`python3 ejercicio2.py`):
 En esta sesión no vamos a explicar el código del último ejemplo. El alumno, estudiando el código del programa [`ejercicio4.py`](ejercicio4.py) tendrá que buscar las instrucciones que hemos añadido y que nos permiten realizar las siguientes mejoras:
 
 1. En cada ejecución la pelota tiene una velocidad distinta.
-2. Ahora la pelota, no se mueve en diagonales.
+2. Ahora la pelota al rebotar, puede cambiar el angulo de rebote.
 3. Al tocar el borde inferior has perdido el juego.
 4. Al perder el juego se pone el texto "Game Over".
 
-A continuación le podemos proponer al alumno algunas mejoras en el juego.
+A continuación le podemos proponer al alumno otras mejoras en el juego.
 
 1. Qué el movimiento del bate se vaya acelerando al dejar pulsado los cursores.
 2. Que el rebote de la pelota no sea siempre usando el mismo ángulo, sino que cada rebote se haga usando un ángulo distinto.
