@@ -243,7 +243,7 @@ Además la programación de juegos puede ser una actividad transversal entre las
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
-La creación de juegos con Python puede desarrollar en el alumno una motivación adicional a la hora de aprender conceptos sobre programación. Además vamos a desarrollar la creatividad del alumno en el proceso del desarrollo de un juego, y también podemos realizar esta actividad en grupos, con lo que estaremos desarrollando el trabajo colaborativo.
+La creación de juegos con Python puede desarrollar en el alumno: una motivación adicional a la hora de aprender conceptos sobre programación,  desarrollar la creatividad del alumno en el proceso del desarrollo de un juego, y al poder realizar esta actividad en grupo, estaremos desarrollando el trabajo colaborativo.
 
 Otra ventaja que podemos obtener de utilizar la librería pyGame, es que el alumno pueda ir aprendiendo aspectos del desarrollo de juegos con Python accediendo directamente al código fuente de muchos juegos realizados por los miembros de la comunidad. De esta forma la página web de pyGame ofrece un [repositorio](https://www.pygame.org/tags/all) con el código de muchos juegos desarrollados con esta herramienta:
 
