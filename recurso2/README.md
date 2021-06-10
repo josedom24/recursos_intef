@@ -237,7 +237,7 @@ A continuación le podemos proponer al alumno otras mejoras en el juego.
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
-En el aprendizaje tradicional de la programación se utilizan muchos ejemplos que no siempre son atractivos o conocidos para los alumnos. Programar un juego puede ser motivador para el alumno, ya que normalmente, va a conocer las dinámicas y funcionalidades de los juegos con lo que es sencillo que el alumnado se implique en esta tarea.
+En el aprendizaje tradicional de la programación se utilizan muchos ejemplos que no siempre son atractivos o conocidos para los alumnos. Programar un juego puede ser motivador, al conocer las dinámicas y funcionalidades de los juegos, lo que facilita que el alumnado se implique en esta tarea.
 
 Además la programación de juegos puede ser una actividad transversal entre las asignaturas donde se este impartiendo la introducción a la programación y otras asignaturas: conceptos matemáticos son, en muchas ocasiones, necesarios para realizar la lógica del juego, el diseño de los gráficos de nuestro juego se pueden realizar en la asignatura de dibujo, o incluso, el guión que tendrá el juego se puede desarrollar en la asignatura de lengua,...
 
