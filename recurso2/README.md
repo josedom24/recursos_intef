@@ -233,6 +233,7 @@ A continuación le podemos proponer al alumno otras mejoras en el juego.
 2. Que el rebote de la pelota no sea siempre usando el mismo ángulo, sino que cada rebote se haga usando un ángulo distinto.
 3. Qué la pelota cada cierto tiempo se vaya acelerando.
 4. Podríamos incluir algunos objetos "ladrillos" y crear un juego parecido al "Arkanoid".
+5. O 
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
