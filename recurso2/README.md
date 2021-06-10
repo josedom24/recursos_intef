@@ -151,8 +151,8 @@ Ya podemos explicar las nuevas instrucciones que hemos incluido para mover la pe
 4. Dentro del bucle del juego: movemos la pelota con los datos guardados en la lista `speed`: `ballrect = ballrect.move(speed)`.
 5. Y comprobamos si ha llegado a algún borde: 
     * Podemos obtener la posición del rectángulo que representa la pelota con `ballrect.left` (posición izquierda), `ballrect.rigth` (posición derecha), `ballrect.top` (posición superior) y `ballrect.bottom` (posición inferior).
-    * Si la posición izquierda es menor que 0 o la posición derecha es mayor que la anchura de la ventana (`ventana.get_width()`) habríamos tocado los bordes laterales. En esta situación cambiamos el signo del primer dato guardado en `speed`, es decir, si se movía a la derecha ahora se moverá a la izquierda, y al contrario.
-    * Si la posición superior es menor que 0 o la posición inferior es mayor que la altura de la ventana (`ventana.get_height()`) habríamos tocado los bordes superior o inferior. En esta situación cambiamos el signo del segundo dato guardado en `speed`, es decir, si se movía hacía abajo ahora se moverá hacía arriba, y al contrario.
+    * Si la posición izquierda es menor que 0 o la posición derecha es mayor que la anchura de la ventana (`ventana.get_width()`) habremos tocado los bordes laterales. En esta situación cambiamos el signo del primer dato guardado en `speed`, es decir, si se movía a la derecha ahora se moverá a la izquierda, y al contrario.
+    * Si la posición superior es menor que 0 o la posición inferior es mayor que la altura de la ventana (`ventana.get_height()`) habremos tocado los bordes superior o inferior. En esta situación cambiamos el signo del segundo dato guardado en `speed`, es decir, si se movía hacía abajo ahora se moverá hacía arriba, y al contrario.
 6. Finalmente volvemos a pintar la pelota en la ventana (`ventana.blit(ball, ballrect)`).
 
 Y ya podemos ejecutar el programa (`python3 ejercicio2.py`):
