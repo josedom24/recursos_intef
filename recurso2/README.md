@@ -14,9 +14,9 @@ Bachillerato y Formación Profesional
 
 ### Asignatura/s
 
-En Bachillerato cualquier asignatura donde se este impartiendo conceptos de introducción a programación con Python. En Formación Profesional, este recurso puede ser apropiado, para los ciclos de la Familia Profesional de Informática donde se imparta la introducción a la Programación.
+En Bachillerato este recurso se podría utilizar en cualquier asignatura donde se este impartiendo conceptos de introducción a programación con Python. En Formación Profesional, este recurso puede ser apropiado, para los ciclos de la Familia Profesional de Informática donde se imparta la introducción a la Programación.
 
-Además este recurso puede servir para que se trabaje en algún proyecto transversal entre varias asignaturas. Normalmente el desarrollo de videojuegos, como hemos indicado anteriormente, necesita de varias disciplinas para llevarlo a cabo: matemáticas, física, dibujo, lengua, ...
+Además, puede servir para que se trabaje en algún proyecto transversal entre varias asignaturas. Normalmente el desarrollo de videojuegos, como hemos indicado anteriormente, necesita de varias disciplinas para llevarlo a cabo: matemáticas, física, dibujo, lengua, ...
 
 ### ¿Se requieren conocimientos previos?¿cuáles son?
 
