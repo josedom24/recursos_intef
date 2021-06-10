@@ -229,11 +229,11 @@ En esta sesión no vamos a explicar el código del último ejemplo. El alumno, e
 
 A continuación le podemos proponer al alumno otras mejoras en el juego.
 
-1. Qué el movimiento del bate se vaya acelerando al dejar pulsado los cursores.
-2. Que el rebote de la pelota no sea siempre usando el mismo ángulo, sino que cada rebote se haga usando un ángulo distinto.
-3. Qué la pelota cada cierto tiempo se vaya acelerando.
+1. Aceleración del movimiento del bate al dejar pulsado los cursores.
+2. En cada rebote, cambio del ángulo del cambio de la trayectoria.
+3. Aceleración de la pelota cada cierto tiempo.
 4. Podríamos incluir algunos objetos "ladrillos" y crear un juego parecido al "Arkanoid".
-5. O 
+5. O introducir otro bate, que se controle con otras dos teclas y hacer un juego parecido al "Pong".
 
 ## ¿Qué habilidades de los alumnos desarrollo que no se pueden obtener de manera más tradicional?
 
