@@ -239,7 +239,7 @@ A continuación le podemos proponer al alumno otras mejoras en el juego.
 
 En el aprendizaje tradicional de la programación se utilizan muchos ejemplos que no siempre son atractivos o conocidos para los alumnos. Programar un juego puede ser motivador, al conocer las dinámicas y funcionalidades de los juegos, lo que facilita que el alumnado se implique en esta tarea.
 
-Además la programación de juegos puede ser una actividad transversal entre las asignaturas donde se este impartiendo la introducción a la programación y otras asignaturas: conceptos matemáticos son, en muchas ocasiones, necesarios para realizar la lógica del juego, el diseño de los gráficos de nuestro juego se pueden realizar en la asignatura de dibujo, o incluso, el guión que tendrá el juego se puede desarrollar en la asignatura de lengua,...
+Además la programación de juegos puede ser una actividad transversal entre las asignaturas donde se este impartiendo la introducción a la programación y otras materias, por ejemplo, en muchas ocasiones, conceptos matemáticos son necesarios para realizar la lógica del juego, el diseño de los gráficos  se puede realizar en la asignatura de dibujo, o incluso, el guión se puede desarrollar en la asignatura de lengua,...
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
