@@ -87,7 +87,7 @@ Veamos con detalle el programa:
     * En este ejemplo, comprobamos el evento de pulsar el botón de cierre de la ventana. Esto ocurre cuando el tipo de evento (`event.type`) es igual al valor `pygame.QUIT`. Si esta condición ocurre se modificará la variable `jugando` que hará que el bucle principal del juego termine.
     * En el bucle principal se actúa sobre los elementos de la ventana. En nuestro caso no tenemos ninguno.
     * Se borran los posibles elementos que tengamos, pintando la pantalla de un color: `ventana.fill((252, 243, 207))`. en este caso usando la notación [RGB](https://es.wikipedia.org/wiki/RGB) lo pintamos de amarillo claro.
-    * Volvemos a pintar lo elementos en su nueva posición: `pygame.display.flip()`, controlando en todo momento ls frecuencia de refresco de la imagen ([fps](https://es.wikipedia.org/wiki/Fotogramas_por_segundo)) sea de 60.
+    * Volvemos a pintar los elementos en su nueva posición: `pygame.display.flip()`, controlando en todo momento que la frecuencia de refresco de la imagen sea de 60 [fps](https://es.wikipedia.org/wiki/Fotogramas_por_segundo).
 4. Si salimos del bucle principal se he terminado el programa: `pygame.quit()`.
 
 Si ejecutamos el programa: `python3 ejemplo1.py`, nos debe aparecer una ventana como esta:
