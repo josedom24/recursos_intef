@@ -1,12 +1,12 @@
 # Consulta el tiempo atmosférico con Python
 
-Un programa de ordenador recibe datos de entrada, procesa, de forma automáticamente, esos datos y genera unos datos de salida, nos devuelve una información.
+Un programa de ordenador recibe datos de entrada, de forma automática, procesa esos datos y genera una información de salida.
 
-Los datos de entrada, normalmente son introducidos por el usuario. En otras ocasiones los datos con los que trabaja el programa están guardados en ficheros o en bases de datos. Pero, ¿y si pudiéramos utilizar los datos que tenemos disponible en internet para realizar nuestros programas?
+Los datos de entrada, normalmente son introducidos por el usuario. En otras ocasiones, los datos con los que trabaja el programa, están guardados en ficheros o en bases de datos. Pero, ¿y si pudiéramos utilizar los datos que tenemos disponible en internet como entrada para nuestros programas?
 
-Actualmente, una de las fuentes de información más importante que tenemos son las páginas web disponibles en internet. Los usuarios podemos consultar distintas páginas web y la información se nos muestra con una estructura determinada: el lenguaje HTML, que está pensado para representar la información de manera sencilla.
+Actualmente, una de las fuentes de información más importantes que tenemos son las páginas web disponibles en internet. Los usuarios podemos consultar distintas páginas web y la información se nos muestra con una estructura determinada: el lenguaje HTML, que está pensado para representar la información de manera sencilla.
 
-Sin embargo, ¿podríamos crear programas que tomaran como datos de entrada la información ofrecida por alguna página web?. La respuesta es sí, pero no vamos a utilizar directamente una página web, vamos a usar lo que conocemos como **Servicio web**. Hay distintos tipos de Servicios web, nosotros vamos a utilizar los servicios web [REST](https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional) (RESTful web API) que son un mecanismo de comunicación que nos permite que un programa se comunique con otro. En este caso la información que se comparte tiene que estar estructurada para que sea fácil gestionarla con un programa. En este recurso el lenguaje que estructura la información que vamos a utilizar será JSON.
+Sin embargo, ¿podríamos crear programas que tomaran como datos de entrada la información ofrecida por alguna página web?. La respuesta es sí, pero no vamos a utilizar directamente una página web, vamos a usar lo que conocemos como **Servicio web**. Hay distintos tipos de Servicios Web, nosotros vamos a utilizar los servicios [REST](https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional) (RESTful web API) que son un mecanismo de comunicación que nos permiten que un programa se comunique con otro. En este caso la información que se comparte tiene que estar estructurada para que su gestión y tratamiento con un programa sea lo más sencilla posible. En este recurso el lenguaje que estructura la información que vamos a utilizar será JSON.
 
 ## ¿Qué debo saber para empezar a trabajar con este recurso?
 
@@ -16,13 +16,13 @@ Bachillerato y Formación Profesional
 
 ### Asignatura/s
 
-En Bachillerato cualquier asignatura donde se este impartiendo conceptos de introducción a programación con Python. En Formación Profesional, este recurso puede ser apropiado, para los ciclos de la Familia Profesional de Informática donde se imparta la introducción a la Programación.
+En Bachillerato este recurso se podría utilizar en cualquier asignatura donde se este impartiendo conceptos de introducción a programación con Python. En Formación Profesional, este recurso puede ser apropiado, para los ciclos de la Familia Profesional de Informática donde se imparta la introducción a la Programación.
 
 ### ¿Se requieren conocimientos previos?¿cuáles son?
 
 El recurso tiene un nivel de dificultad medio. Es necesario que el alumnado tenga conocimientos previos de programación con Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas, trabajo con listas y diccionarios.
 
-Estaría muy bien que el alumno tenga algunos conocimientos del protocolo HTTP: como funciona las peticiones a las páginas web, qué es una petición y una respuesta HTTP,... DE todas maneras el recurso se puede realizar sin tener estos conocimientos.
+Estaría muy bien que el alumno tenga algunos conocimientos del protocolo HTTP: como funciona las peticiones a las páginas web, qué es una petición y una respuesta HTTP,... De todas maneras el recurso se puede realizar sin tener estos conocimientos.
 
 ### ¿Qué objetivos se persigue con el recurso?
 
@@ -30,13 +30,13 @@ Los objetivos de este recurso son los siguientes:
 
 * Introducir el concepto de **Servicio Web**, como mecanismo de comunicación entre programas en internet. En este recurso introduciremos los Servicios Web del tio RESTful API.
 * Introducir el lenguaje de marcas JSON, que actualmente es uno de los más usado para estructurar la información que se transmite por internet.
-* Aprender hacer programas en Python que se comuniquen con un Servicio Web y que nos posibilite el tratamiento automático de la información que vamos a consumir del Servicio Web.
-* Desarrollar en los alumnos la posibilidad de que hagan programas que traten de forman automática información, y la necesidad de que cierta información que podemos obtener, por ejemplo de la administración pública, tenga mecanismos y estructuras abiertas para que sea sencillo su tratamiento.
+* Aprender a crear programas en Python que se comuniquen con un Servicio Web y que nos posibilite el tratamiento automático de la información que vamos a consumir del Servicio Web.
+* Desarrollar en los alumnos la habilidad de crear programas que traten de forman automática información recogida de internet.  
+* El alumno aprenderá que es necesario que cierta información que podemos obtener, por ejemplo de la administración pública, tenga mecanismos y formatos abiertos para que sea sencillo su tratamiento.
 
 ### ¿En qué consiste el recurso?
 
-Vamos a desarrollar un programa en Python que nos posibilite consultar el tiempo atmosférico que tenemos en nuestra ciudad. Para ello el programa, se comunicara con el servicio web RESTful API de 
-*openweather*.
+Vamos a desarrollar un programa en Python que nos posibilite consultar el tiempo atmosférico que tenemos en nuestra ciudad. Para ello el programa, se comunicará con el servicio web RESTful API de *openweather*.
 
 ## Y ahora que sé para que sirve, ¿cómo lo pongo en práctica?
 
@@ -54,7 +54,7 @@ Pero, ¿y si queremos desarrollar un programa que haga la misma consulta y que p
 
 Aunque algunos servicios web RESTful se pueden usar sin ninguna restricción, otros, como el de OpenWeather, es necesario que nos identifiquemos para su utilización. En este caso el proceso de autentficación se hace mediante una clave personal (**API key**). Lo primero que vamos a hacer es obtener nuestra clave personal, para ello:
 
-1. Nos registramos en la página de OpenWeather
+1. Nos registramos en la página de OpenWeather.
 2. Accedemos con el usuario y contraseña que hemos indicado.
 3. Accedemos al apartado *API Keys* y generamos una nueva key.
 
@@ -66,9 +66,9 @@ Ya podemos ver la clave que hemos generado. Tenemos que tener en cuenta que esta
 
 Una vez que tenemos nuestra API key, vamos a usar por primera vez una API RESTful de OpenWeather. 
 
-En realidad el uso es muy parecido a acceder a una página web, es decir, vamos a hacer una petición HTTP a una URL que nos devolverá una información determinada. Normalmente las URL de las API RESTful tienen una serie de parámetros que nos permiten configurar la consulta. Y una vez que hagamos la petición obtendremos una respuesta HTTP que nos devolverá una información con una cierta estructura. La pregunta sería: ¿Cómo sabemos las URL, los parámetros y la estructura de la información recibida de una API RESTful? La respuesta a esta pregunta es: estudiando la documentación de la API RESTful que queremos usar.
+En realidad el uso es muy parecido a acceder a una página web, es decir, vamos a hacer una petición HTTP a una URL que nos devolverá una información determinada. Normalmente las URL de las API RESTful tienen una serie de parámetros que nos permiten configurar la consulta. Y una vez que hagamos la petición obtendremos una respuesta HTTP que nos devolverá una información con una cierta estructura. La pregunta sería: ¿Cómo sabemos las URL, los parámetros y la estructura de la información recibida de una API RESTful? Para saber todos esos datos necesitamos estudiar la documentación de la API RESTful que queremos usar.
 
-Accedemos a la opción *API* y nos aparecen los distintos servicios web que podemos usar. Nosotros, para la realización de este recurso, vamos a usar **Current Weather Data**:
+Accedemos a la opción *API* y nos aparecerán los distintos servicios web que podemos usar. Nosotros, para la realización de este recurso, vamos a usar **Current Weather Data**:
 
 ![openweather](img/openweather4.png)
 
@@ -80,7 +80,7 @@ En la documentación podemos aprender muchas cosas:
 
 * Las URL que que tengo que usar para realizar búsqueda de ciudades: por nombre, por identificador, por coordenadas geográficas, por códigos postales,...
 * Los parámetros que puedo indicar en la URL para configurar la consulta.
-* La estructura de la información recibida
+* La estructura de la información recibida.
 
 En nuestro caso vamos a hacer una consulta de una ciudad por nombre, por lo que la URL que voy a usar es:
 
@@ -163,7 +163,7 @@ Vamos a usar el módulo [`requests`](https://docs.python-requests.org/en/master/
 
 ```python
 import requests
-## Pedimos el nombre de la ciudad por teclado
+# Pedimos el nombre de la ciudad por teclado
 ciudad=input("Dime el nombre de una ciudad:")
 # Creamos un diccionario con los parámetros de la URL
 parametros={"q":ciudad,
@@ -171,7 +171,7 @@ parametros={"q":ciudad,
             "APPID":"50ff42ffd87463e3fc038c0166616d7a"}
 # Realizamos la petición, indicando la URL y los parámetros
 respuesta=requests.get("http://api.openweathermap.org/data/2.5/weather",params=parametros)
-# Si la respuesta devuelve eñ código 200, todo ha ido bien
+# Si la respuesta devuelve el código de estado 200, todo ha ido bien
 if respuesta.status_code == 200:
     # La respuesta json se convierte en un diccionario
     datos = respuesta.json()
@@ -189,8 +189,8 @@ Veamos con detalle el programa:
 
 1. Importamos el modulo `requests` (`import requests`).
 2. A continuación pedimos el nombre de la ciudad por teclado.
-3. Creamos un diccionario donde vamos a guardar los nombres de los parámetros de la url y sus valores. Al parámetro `q` asignamos el valor de la variable `ciudad`, donde hemos guardado el nombre de la ciudad. Usa un diccionario para guardar los parámetros de la URL facilita el trabajo con ellos.
-4. Al hacer la petición con el módulo `requests` indicamos la url y el parámetro `params` lo igualamos al diccionario que hemos creado anteriormente. La petición nos va a devolver la información de la respuesta HTTP que guardaremos en el objeto `respuesta`.
+3. Creamos un diccionario donde vamos a guardar los nombres de los parámetros de la url y sus valores. Al parámetro `q` asignamos el valor de la variable `ciudad`, donde hemos guardado el nombre de la ciudad. Usar un diccionario para guardar los parámetros de la URL facilita el trabajo con ellos.
+4. Al hacer la petición con el módulo `requests` indicamos la url y sus parámetros (`params=parametros`). La petición nos va a devolver la información de la respuesta HTTP que guardaremos en el objeto `respuesta`.
 5. Comprobamos si la respuesta HTTP ha sido correcta, para ello comprobamos que el [código de estado](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP) sea 200 (`if respuesta.status_code == 200:`), si devuelve otro valor, ha habido un problema, y mostramos el mensaje "De esa ciudad no tengo datos.".
 6. Si la petición ha sido correcta, convertimos la información devuelta, con formato JSON, a un diccionario llamado `datos`. Esto lo hacemos con el método `json()`: `datos = respuesta.json()`.
 7. Finalmente imprimimos los datos de salida que están guardados en el diccionario `datos`.
@@ -212,12 +212,14 @@ La humedad es: 56 %
 
 En muchas ocasiones, los programas que se desarrollan en las asignaturas de iniciación a la programación no trabajan con una gran cantidad de datos, o estos datos no son reales. 
 
-Con el desarrollo de programas que se comuniquen con los Servicios WEb que tenemos disponibles en Internet, se pueden hacer programas más reales que nos posibilite el trabajo con información más real.
+Con el desarrollo de programas que se comuniquen con los Servicios Web que tenemos disponibles en Internet, se pueden hacer programas más reales que nos posibilite el trabajo con información más real.
 
 ## ¿Qué ventaja obtengo de utilizar este recurso en el aula?
 
-El trabajo con Servicios Web nos da la posibilidad de crear programa que obtengan información de distinto tipo, relacionada con distintas asignaturas. Sería muy sencillo desarrollar proyectos en el que se desarrollen programas para el tratamiento automático de información que se puede usar en otras asignaturas: por ejemplo, recogida de datos para realizar cálculos estadísticos en la asignatura de matemáticas, recolección y procesamiento de datos demográficos en la asignatura de geografía, ...
+El trabajo con Servicios Web nos da la posibilidad de crear programa que obtengan información de distinto tipo, relacionada con distintas asignaturas. Sería muy sencillo realizar proyectos en el que se desarrollen programas para el tratamiento automático de información que se puedan usar en otras asignaturas: por ejemplo, recogida de datos para realizar cálculos estadísticos en la asignatura de matemáticas, recolección y procesamiento de datos demográficos en la asignatura de geografía, ...
 
 ## ¿Qué materiales necesito para ponerlo en práctica en el aula?
 
 Necesitamos un ordenador con Python 3 y con la librería `requests` instalada (se puede seguir esta [guía](https://docs.python-requests.org/en/latest/user/install/#install)). Para codificar el programa podemos usar cualquier editor de texto.
+
+Si queremos seguir trabajando con Servicios Web, podemos encontrar en internet distintas páginas que nos muestran listas de API, por ejemplo: [ProgrammableWeb](https://www.programmableweb.com/).
