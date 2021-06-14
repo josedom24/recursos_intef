@@ -6,7 +6,7 @@ Los datos de entrada, normalmente son introducidos por el usuario. En otras ocas
 
 Actualmente, una de las fuentes de información más importantes que tenemos son las páginas web disponibles en internet. Los usuarios podemos consultar distintas páginas web y la información se nos muestra con un formato determinado, lenguaje HTML, pensado para representar la información de manera sencilla.
 
-Sin embargo, ¿podríamos crear programas que tomaran como datos de entrada la información ofrecida por alguna página web?. La respuesta es sí, pero no vamos a utilizar directamente una página web, vamos a usar lo que conocemos como **Servicio web**. Hay distintos tipos de Servicios Web, nosotros vamos a utilizar los servicios [REST](https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional) (RESTful web API) que son un mecanismo de comunicación que nos permiten comunicar un programa con otro. En este caso la información que se comparte tiene que estar estructurada para que su gestión y tratamiento con un programa sea lo más sencilla posible. En este recurso el lenguaje que estructura la información que vamos a utilizar será JSON.
+Sin embargo, ¿podríamos crear programas que tomaran como datos de entrada la información ofrecida por alguna página web?. La respuesta es sí, pero no vamos a utilizar directamente una página web, vamos a usar lo que conocemos como **Servicio web**. Hay distintos tipos de Servicios Web, nosotros vamos a utilizar los servicios [REST](https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional) (RESTful web API) que son un mecanismo de comunicación que nos permiten comunicar un programa con otro. En este caso, la información que se comparte tiene que estar estructurada para que su gestión y tratamiento con un programa sea lo más sencilla posible. En este recurso el lenguaje que estructura la información que vamos a utilizar será JSON.
 
 ## ¿Qué debo saber para empezar a trabajar con este recurso?
 
@@ -22,7 +22,7 @@ En Bachillerato este recurso se podría utilizar en cualquier asignatura donde s
 
 El recurso tiene un nivel de dificultad medio. Es necesario que el alumnado tenga conocimientos previos de programación con Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas, trabajo con listas y diccionarios.
 
-Estaría muy bien que el alumno tenga algunos conocimientos del protocolo HTTP: como funciona las peticiones a las páginas web, qué es una petición y una respuesta HTTP,... De todas maneras el recurso se puede realizar sin tener estos conocimientos.
+Estaría muy bien que el alumno tenga algunos conocimientos del protocolo HTTP: cómo funcionan las peticiones a las páginas web, qué es una petición y una respuesta HTTP,... de todas maneras, el recurso se puede realizar sin tener estos conocimientos.
 
 ### ¿Qué objetivos se persigue con el recurso?
 
