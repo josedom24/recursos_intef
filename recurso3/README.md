@@ -4,7 +4,7 @@ Un programa de ordenador recibe datos de entrada, de forma automática, procesa 
 
 Los datos de entrada, normalmente son introducidos por el usuario. En otras ocasiones, los datos con los que trabaja el programa, están guardados en ficheros o en bases de datos. Pero, ¿y si pudiéramos utilizar los datos que tenemos disponible en internet como entrada para nuestros programas?
 
-Actualmente, una de las fuentes de información más importantes que tenemos son las páginas web disponibles en internet. Los usuarios podemos consultar distintas páginas web y la información se nos muestra con un formato determinado, lenguaje HTML, que está pensado para representar la información de manera sencilla.
+Actualmente, una de las fuentes de información más importantes que tenemos son las páginas web disponibles en internet. Los usuarios podemos consultar distintas páginas web y la información se nos muestra con un formato determinado, lenguaje HTML, pensado para representar la información de manera sencilla.
 
 Sin embargo, ¿podríamos crear programas que tomaran como datos de entrada la información ofrecida por alguna página web?. La respuesta es sí, pero no vamos a utilizar directamente una página web, vamos a usar lo que conocemos como **Servicio web**. Hay distintos tipos de Servicios Web, nosotros vamos a utilizar los servicios [REST](https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional) (RESTful web API) que son un mecanismo de comunicación que nos permiten que un programa se comunique con otro. En este caso la información que se comparte tiene que estar estructurada para que su gestión y tratamiento con un programa sea lo más sencilla posible. En este recurso el lenguaje que estructura la información que vamos a utilizar será JSON.
 
