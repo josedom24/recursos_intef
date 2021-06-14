@@ -42,17 +42,17 @@ Vamos a desarrollar un programa en Python que nos posibilite consultar el tiempo
 
 ### Paso 1: Entendiendo la diferencia entre aplicación web y servicio web
 
-Como ya hemos presentado en la introducción del recurso, las páginas web o aplicaciones web están pensada para que las personas consulten información. De esta manera si quiero saber los datos atmosféricos de mi ciudad puedo a acceder a la página [openweathermap.org](https://openweathermap.org) y hacer una búsqueda de mi ciudad:
+Como ya hemos presentado en la introducción del recurso, las páginas web o aplicaciones web están pensadas para que las personas consulten información. De esta manera, si quiero saber los datos atmosféricos de mi ciudad puedo a acceder a la página [openweathermap.org](https://openweathermap.org) y hacer una búsqueda de mi ciudad:
 
 ![openweather](img/openweather1.png)
 
-Los datos son recibidos utilizando el lenguaje HTML y utilizando Hojas de Estílo (CSS) para darle formato. De esta manera la persona recibe está información de manera muy clara.
+Los datos son recibidos utilizando el lenguaje HTML y utilizando Hojas de Estílo (CSS) para darle formato. De esta manera, la persona recibe está información de manera muy clara.
 
-Pero, ¿y si queremos desarrollar un programa que haga la misma consulta y que pueda procesar esa información de forma automática? En este caso necesitaríamos consultar el servicio web RESTful de openweather: [https://openweathermap.org/api](https://openweathermap.org/api) y la información recibida vendría estructurada con otro lenguaje de marcado, en nuestro caso utilizaremos JSON, para que sea fácil procesarlo desde nuestro programa. Lo vemos en el siguiente punto.
+Pero, ¿y si queremos desarrollar un programa que haga la misma consulta y que pueda procesar esa información de forma automática? En este caso, necesitaríamos consultar el servicio web RESTful de openweather: [https://openweathermap.org/api](https://openweathermap.org/api) y la información recibida vendría estructurada con otro lenguaje de marcado, en nuestro caso utilizaremos JSON, para que sea fácil procesarlo desde nuestro programa. Lo vemos en el siguiente punto.
 
 ### Paso 2: Usando el servicio web RESTful de OpenWeather
 
-Aunque algunos servicios web RESTful se pueden usar sin ninguna restricción, otros, como el de OpenWeather, es necesario que nos identifiquemos para su utilización. En este caso el proceso de autentficación se hace mediante una clave personal (**API key**). Lo primero que vamos a hacer es obtener nuestra clave personal, para ello:
+Aunque algunos servicios web RESTful se pueden usar sin ninguna restricción, otros, como el de OpenWeather, requieren que nos identifiquemos para su utilización. En este caso el proceso de autentificación se hace mediante una clave personal (**API key**). Lo primero que vamos a hacer es obtener nuestra clave personal, para ello:
 
 1. Nos registramos en la página de OpenWeather.
 2. Accedemos con el usuario y contraseña que hemos indicado.
