@@ -20,7 +20,7 @@ En Bachillerato este recurso se podría utilizar en cualquier asignatura donde s
 
 ### ¿Se requieren conocimientos previos?¿cuáles son?
 
-El recurso tiene un nivel de dificultad medio. Es necesario que el alumnado tenga conocimientos previos de programación con Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas, trabajo con listas y diccionarios.
+Para realizar este recurso es necesario tener conocimientos previos de programación con Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas, trabajo con listas y diccionarios.
 
 Estaría muy bien que el alumno tenga algunos conocimientos del protocolo HTTP: cómo funcionan las peticiones a las páginas web, qué es una petición y una respuesta HTTP,... de todas maneras, el recurso se puede realizar sin tener estos conocimientos.
 

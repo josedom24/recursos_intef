@@ -20,7 +20,7 @@ Además, puede servir para que se trabaje en algún proyecto transversal entre v
 
 ### ¿Se requieren conocimientos previos?¿cuáles son?
 
-El recurso tiene un nivel de dificultad medio. Es necesario que el alumnado tenga conocimientos previos de programación con Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
+Para realizar este recurso es necesario tener conocimientos previos de programación con Python: instalación de python en el sistema operativo, estructura de un programa, ejecución de un programa, trabajo con datos, tipos de datos y variables, estructuras de programación: secuencial, alternativas y repetitivas.
 
 ### ¿Qué objetivos se persigue con el recurso?
 
